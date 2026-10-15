@@ -10,22 +10,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg-base: #111110;
-      --bg-surface: #171614;
-      --bg-elevated: #1f1d1a;
-      --bg-warm-cream: #f6f1e7;
-      --text-primary: #f5f2eb;
-      --text-secondary: #b8b2a6;
-      --text-muted: #7e786d;
-      --text-dark: #181614;
-      --accent: #e5be73;
-      --accent-deep: #c99b49;
-      --accent-soft: rgba(229, 190, 115, 0.14);
-      --border-hairline: rgba(229, 190, 115, 0.18);
-      --border-subtle: rgba(255, 255, 255, 0.08);
+      --bg-base: #060d1b;
+      --bg-surface: #0b162c;
+      --bg-elevated: #112240;
+      --bg-warm-cream: #f0f6ff;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #7c95b8;
+      --text-dark: #060d1b;
+      --accent: #4da8ff;
+      --accent-bright: #38bdf8;
+      --accent-deep: #1d4ed8;
+      --accent-soft: rgba(77, 168, 255, 0.14);
+      --border-hairline: rgba(77, 168, 255, 0.32);
+      --border-subtle: rgba(148, 197, 255, 0.12);
       --font-serif: 'Cormorant Garamond', Georgia, serif;
       --font-display: 'Fraunces', Georgia, serif;
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .blu {
+      color: var(--accent-bright);
+      text-shadow: 0 0 24px rgba(56, 189, 248, 0.28);
     }
 
     * {
@@ -45,6 +51,9 @@
 
     body {
       background-color: var(--bg-base);
+      background-image:
+        radial-gradient(circle at 15% 12%, rgba(37, 99, 235, 0.14), transparent 38%),
+        radial-gradient(circle at 85% 28%, rgba(56, 189, 248, 0.1), transparent 42%);
       overflow-x: clip;
     }
 
@@ -77,7 +86,7 @@
       left: 0;
       right: 0;
       z-index: 100;
-      background: rgba(17, 17, 16, 0.84);
+      background: rgba(6, 13, 27, 0.86);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--border-subtle);
@@ -98,8 +107,8 @@
     }
     .brand-name {
       font-family: var(--font-serif);
-      font-size: 24px;
-      font-weight: 600;
+      font-size: 26px;
+      font-weight: 700;
       letter-spacing: 0.18em;
       color: var(--text-primary);
     }
@@ -107,7 +116,9 @@
       font-size: 10px;
       letter-spacing: 0.24em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--accent-bright);
+      padding-left: 12px;
+      border-left: 1px solid var(--border-hairline);
       white-space: nowrap;
     }
     .nav-links {
@@ -125,24 +136,26 @@
       white-space: nowrap;
     }
     .nav-links a:hover {
-      color: var(--accent);
+      color: var(--accent-bright);
     }
     .btn-nav {
-      background: var(--accent);
-      color: #111110;
+      background: linear-gradient(135deg, var(--accent-bright), var(--accent-deep));
+      color: #ffffff;
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       padding: 12px 22px;
-      border: none;
+      border: 1px solid rgba(125, 211, 252, 0.35);
+      box-shadow: 0 6px 22px rgba(37, 99, 235, 0.32);
       cursor: pointer;
       white-space: nowrap;
-      transition: opacity 0.2s ease, transform 0.2s ease;
+      transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     }
     .btn-nav:hover {
-      opacity: 0.92;
+      opacity: 0.95;
       transform: translateY(-1px);
+      box-shadow: 0 10px 28px rgba(56, 189, 248, 0.42);
     }
 
     /* Hero Section */
@@ -152,7 +165,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 130px 28px 90px;
+      padding: 136px 28px 92px;
       overflow: hidden;
     }
     .hero-bg {
@@ -165,51 +178,75 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
-      filter: brightness(0.42) contrast(1.05);
+      filter: brightness(0.4) contrast(1.08) saturate(0.95);
     }
     .hero-bg::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-        180deg,
-        rgba(17, 17, 16, 0.88) 0%,
-        rgba(17, 17, 16, 0.62) 48%,
-        rgba(17, 17, 16, 0.98) 100%
-      );
+      background:
+        radial-gradient(circle at 50% 35%, rgba(29, 78, 216, 0.28), transparent 60%),
+        linear-gradient(
+          180deg,
+          rgba(6, 13, 27, 0.88) 0%,
+          rgba(6, 13, 27, 0.62) 48%,
+          rgba(6, 13, 27, 0.98) 100%
+        );
     }
     .hero-glow {
       position: absolute;
-      width: 640px;
-      height: 640px;
+      width: 680px;
+      height: 680px;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       border-radius: 50%;
-      background: rgba(229, 190, 115, 0.08);
-      filter: blur(110px);
+      background: rgba(56, 189, 248, 0.15);
+      filter: blur(115px);
       pointer-events: none;
       z-index: 1;
     }
     .hero-content {
       position: relative;
       z-index: 2;
-      max-width: 880px;
+      max-width: 900px;
       margin: 0 auto;
       text-align: center;
+    }
+    .hero-brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 20px;
+      margin-bottom: 22px;
+      background: rgba(11, 22, 44, 0.78);
+      border: 1px solid var(--border-hairline);
+      box-shadow: 0 0 28px rgba(56, 189, 248, 0.14);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+    }
+    .hero-brand-pill .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-bright);
+      box-shadow: 0 0 10px var(--accent-bright);
     }
     .eyebrow {
       font-size: 10.5px;
       font-weight: 600;
       letter-spacing: 0.34em;
       text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 22px;
+      color: var(--accent-bright);
+      margin-bottom: 20px;
       display: block;
     }
     .hero h1 {
       font-family: var(--font-serif);
-      font-size: clamp(46px, 7vw, 86px);
+      font-size: clamp(46px, 6.8vw, 84px);
       font-weight: 500;
       line-height: 1.04;
       letter-spacing: -0.02em;
@@ -218,14 +255,14 @@
     }
     .hero h1 em {
       font-style: italic;
-      color: var(--accent);
+      color: var(--accent-bright);
       font-weight: 500;
     }
     .hero-sub {
       font-size: clamp(16px, 1.8vw, 19.5px);
       font-weight: 300;
       color: var(--text-secondary);
-      max-width: 670px;
+      max-width: 690px;
       margin: 0 auto 36px;
       line-height: 1.7;
     }
@@ -239,8 +276,9 @@
       display: flex;
       max-width: 540px;
       margin: 0 auto 18px;
-      background: rgba(23, 22, 20, 0.92);
+      background: rgba(11, 22, 44, 0.92);
       border: 1px solid var(--border-hairline);
+      box-shadow: 0 14px 40px rgba(3, 8, 20, 0.65);
     }
     .hero-form input {
       flex: 1;
@@ -259,8 +297,8 @@
       font-size: 11px;
     }
     .hero-form button {
-      background: linear-gradient(90deg, var(--accent), var(--accent-deep));
-      color: #111110;
+      background: linear-gradient(135deg, var(--accent-bright), var(--accent-deep));
+      color: #ffffff;
       border: none;
       padding: 18px 28px;
       font-size: 11px;
@@ -294,14 +332,14 @@
       gap: 28px;
     }
     .proof-item {
-      border-left: 1px solid var(--border-hairline);
+      border-left: 2px solid var(--accent-bright);
       padding-left: 20px;
     }
     .proof-item h3 {
       font-family: var(--font-serif);
       font-size: 24px;
       font-weight: 600;
-      color: var(--accent);
+      color: var(--accent-bright);
       margin-bottom: 3px;
     }
     .proof-item p {
@@ -332,7 +370,7 @@
     }
     .section-title em {
       font-style: italic;
-      color: var(--accent);
+      color: var(--accent-bright);
     }
 
     /* 01 / 02 / 03 Process Steps (Investor Dinner Club style) */
@@ -350,7 +388,7 @@
       font-size: 96px;
       font-style: italic;
       line-height: 0.85;
-      color: rgba(229, 190, 115, 0.13);
+      color: rgba(56, 189, 248, 0.16);
       position: absolute;
       top: -12px;
       left: 0;
@@ -368,7 +406,7 @@
       font-size: 28px;
       font-style: italic;
       font-weight: 500;
-      color: var(--accent);
+      color: var(--accent-bright);
       margin-bottom: 12px;
     }
     .step-inner p {
@@ -380,7 +418,7 @@
 
     /* Editorial Quote Interlude (Founder Dinners style) */
     .quote-banner {
-      background: var(--bg-surface);
+      background: linear-gradient(180deg, var(--bg-surface) 0%, #0d1d3a 50%, var(--bg-surface) 100%);
       border-top: 1px solid var(--border-subtle);
       border-bottom: 1px solid var(--border-subtle);
       padding: 96px 28px;
@@ -397,7 +435,7 @@
     }
     .quote-banner blockquote em {
       font-style: italic;
-      color: var(--accent);
+      color: var(--accent-bright);
     }
 
     /* Inaugural Dinner Dossier & Venue Gallery (607 Geary St, SF) */
@@ -423,7 +461,7 @@
       font-size: 11px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--accent);
     }
     .dossier-row .d-val {
       color: var(--text-primary);
@@ -439,6 +477,7 @@
       position: relative;
       overflow: hidden;
       background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
       aspect-ratio: 16 / 11;
     }
     .gallery-item.tall {
@@ -459,14 +498,14 @@
       position: absolute;
       left: 16px;
       bottom: 14px;
-      background: rgba(17, 17, 16, 0.78);
+      background: rgba(6, 13, 27, 0.84);
       backdrop-filter: blur(8px);
       padding: 5px 12px;
       font-size: 10.5px;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--text-primary);
-      border-left: 2px solid var(--accent);
+      border-left: 2px solid var(--accent-bright);
     }
 
     /* Why Members Join / The 4 Pillars (Investor Dinner Club style) */
@@ -484,7 +523,7 @@
       font-size: 24px;
       font-style: italic;
       font-weight: 500;
-      color: var(--accent);
+      color: var(--accent-bright);
       margin-bottom: 10px;
     }
     .pillar-col p {
@@ -511,17 +550,18 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: border-color 0.25s ease, transform 0.25s ease;
+      transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
     }
     .partner-ed-card:hover {
-      border-color: var(--border-hairline);
+      border-color: var(--accent-bright);
       transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(3, 8, 20, 0.55);
     }
     .partner-ed-img {
       height: 220px;
       overflow: hidden;
       position: relative;
-      background: #0b0b0a;
+      background: #040914;
     }
     .partner-ed-img img {
       width: 100%;
@@ -536,7 +576,7 @@
       position: absolute;
       top: 14px;
       right: 14px;
-      background: rgba(17, 17, 16, 0.85);
+      background: rgba(6, 13, 27, 0.88);
       backdrop-filter: blur(8px);
       border: 1px solid var(--border-subtle);
       padding: 6px 10px;
@@ -557,7 +597,7 @@
       font-size: 10px;
       letter-spacing: 0.24em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--accent-bright);
       margin-bottom: 8px;
       display: block;
     }
@@ -586,10 +626,10 @@
       padding: 6px 0;
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(148, 197, 255, 0.06);
     }
     .partner-highlights li strong {
-      color: var(--text-primary);
+      color: var(--accent-bright);
       font-weight: 500;
     }
     .partner-ed-footer {
@@ -602,7 +642,7 @@
       font-size: 10.5px;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--accent-bright);
     }
     .partner-ed-footer a:hover {
       text-decoration: underline;
@@ -639,7 +679,7 @@
     details.faq-item summary .plus {
       font-family: var(--font-sans);
       font-size: 18px;
-      color: var(--accent);
+      color: var(--accent-bright);
       transition: transform 0.2s ease;
     }
     details.faq-item[open] summary .plus {
@@ -664,6 +704,7 @@
       margin: 0 auto;
       background: var(--bg-base);
       border: 1px solid var(--border-hairline);
+      box-shadow: 0 24px 64px rgba(3, 8, 20, 0.7);
       padding: 52px;
     }
     .form-grid {
@@ -700,45 +741,47 @@
     .field input:focus,
     .field select:focus,
     .field textarea:focus {
-      border-color: var(--accent);
+      border-color: var(--accent-bright);
     }
     .field input:user-invalid,
     .field select:user-invalid {
       border-color: #ef4444;
     }
     .field input:required:user-valid {
-      border-color: rgba(229, 190, 115, 0.55);
+      border-color: rgba(56, 189, 248, 0.55);
     }
     .btn-submit {
       width: 100%;
-      background: linear-gradient(90deg, var(--accent), var(--accent-deep));
-      color: #111110;
-      border: none;
+      background: linear-gradient(135deg, var(--accent-bright), var(--accent-deep));
+      color: #ffffff;
+      border: 1px solid rgba(125, 211, 252, 0.35);
+      box-shadow: 0 8px 28px rgba(37, 99, 235, 0.35);
       padding: 18px 28px;
       font-size: 11.5px;
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       cursor: pointer;
-      transition: opacity 0.2s;
+      transition: opacity 0.2s, transform 0.2s;
       margin-top: 6px;
     }
     .btn-submit:hover {
-      opacity: 0.92;
+      opacity: 0.94;
+      transform: translateY(-1px);
     }
     .confirm-box {
       display: none;
       margin-top: 20px;
       padding: 18px 20px;
-      background: rgba(229, 190, 115, 0.1);
-      border: 1px solid var(--accent);
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--accent-bright);
       color: var(--text-primary);
       font-size: 13.5px;
     }
 
     /* Footer */
     footer {
-      background: #0c0c0b;
+      background: #040914;
       border-top: 1px solid var(--border-subtle);
       padding: 44px 0;
       font-size: 11px;
@@ -805,7 +848,7 @@
   <header class="navbar">
     <div class="nav-inner">
       <a href="#top" class="brand">
-        <span class="brand-name">BLUPRNT</span>
+        <span class="brand-name"><span class="blu">BLU</span>PRNT</span>
         <span class="brand-tag">The Round Table</span>
       </a>
       <nav class="nav-links" aria-label="Primary Navigation">
@@ -832,14 +875,17 @@
       <div class="hero-glow"></div>
 
       <div class="hero-content">
-        <span class="eyebrow">Private Founder &amp; Owner Dealmaking Series</span>
+        <div class="hero-brand-pill">
+          <span class="dot"></span>
+          <span><span class="blu">BLU</span>PRNT &mdash; Founder &amp; Owner Dealmaking Series</span>
+        </div>
         <h1>
           Fifteen Owners.<br />
-          One Table.<br />
+          One <span class="blu">BLU</span>PRNT Table.<br />
           <em>Where Capital Meets Conviction.</em>
         </h1>
         <p class="hero-sub">
-          Intimate, invitation-only dinners connecting business owners generating <strong>$5M+ in annual revenue</strong>. Join our inaugural San Francisco table on <strong>November 22nd at 6:00 PM</strong> at <strong>Kinara Fusion Kitchen (607 Geary St)</strong> for an all-expense-paid 3-course dinner, vetted US &amp; Dubai real estate deal flow, and induction into <strong>The BLUPRNT Round Table</strong>.
+          Intimate, invitation-only dinners connecting business owners generating <strong>$5M+ in annual revenue</strong>. Join our inaugural San Francisco table on <strong>November 22nd at 6:00 PM</strong> at <strong>Kinara Fusion Kitchen (607 Geary St)</strong> for an all-expense-paid 3-course dinner, vetted US &amp; Dubai real estate deal flow, and induction into <strong>The <span class="blu">BLU</span>PRNT Round Table</strong>.
         </p>
 
         <form class="hero-form" onsubmit="prefillAndScroll(event)">
@@ -887,7 +933,7 @@
     <section id="process">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">The Process</span>
+          <span class="eyebrow">The <span class="blu">BLU</span>PRNT Process</span>
           <h2 class="section-title">From invitation to a <em>seat at the table.</em></h2>
         </div>
 
@@ -897,7 +943,7 @@
             <div class="step-inner">
               <h3>Receive Invitation</h3>
               <p>
-                Access to BLUPRNT is strictly by nomination or curated application for business owners and founders generating over $5M in annual revenue, ensuring the highest caliber room in San Francisco.
+                Access to <strong><span class="blu">BLU</span>PRNT</strong> is strictly by nomination or curated application for business owners and founders generating over $5M in annual revenue, ensuring the highest caliber room in San Francisco.
               </p>
             </div>
           </article>
@@ -917,7 +963,7 @@
             <div class="step-inner">
               <h3>Join The Round Table</h3>
               <p>
-                Every dinner guest is inducted into <strong>The BLUPRNT Round Table</strong>—our private community and co-investment network for US ground-up development and tax-free Dubai real estate.
+                Every dinner guest is inducted into <strong>The <span class="blu">BLU</span>PRNT Round Table</strong>—our private community and co-investment network for US ground-up development and tax-free Dubai real estate.
               </p>
             </div>
           </article>
@@ -937,7 +983,7 @@
       <div class="container">
         <div class="dinner-layout">
           <div>
-            <span class="eyebrow">Inaugural Chapter // San Francisco</span>
+            <span class="eyebrow"><span class="blu">BLU</span>PRNT Inaugural Chapter // San Francisco</span>
             <h2 class="section-title" style="margin-bottom:18px;">
               Kinara Fusion Kitchen.<br />
               <em>November 22nd at 6:00 PM.</em>
@@ -1014,8 +1060,8 @@
     <section id="why" style="padding-top:20px;">
       <div class="container">
         <div class="section-header center">
-          <span class="eyebrow">The Difference</span>
-          <h2 class="section-title">Why Owners Join <em>The Round Table</em></h2>
+          <span class="eyebrow">The <span class="blu">BLU</span>PRNT Difference</span>
+          <h2 class="section-title">Why Owners Join The <span class="blu">BLU</span>PRNT <em>Round Table</em></h2>
         </div>
 
         <div class="pillars-grid">
@@ -1054,7 +1100,7 @@
     <section id="partners" class="partners-section">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">The Founding Ecosystem</span>
+          <span class="eyebrow">The <span class="blu">BLU</span>PRNT Founding Ecosystem</span>
           <h2 class="section-title">Built for <em>Capital Preservation</em> &amp; Executive Hospitality.</h2>
         </div>
 
@@ -1156,7 +1202,7 @@
               Everything you want to know <em>before you show up.</em>
             </h2>
             <p style="font-size:14.5px;color:var(--text-secondary);font-weight:300;">
-              Questions regarding the November 22nd dinner at Kinara Fusion Kitchen or The BLUPRNT Round Table? Reach our reservations desk directly at <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent);text-decoration:underline;">reservations@bluprntseries.com</a>.
+              Questions regarding the November 22nd dinner at Kinara Fusion Kitchen or The <span class="blu">BLU</span>PRNT Round Table? Reach our reservations desk directly at <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent-bright);text-decoration:underline;">reservations@bluprntseries.com</a>.
             </p>
           </div>
 
@@ -1207,7 +1253,7 @@
                 <span class="plus">+</span>
               </summary>
               <p>
-                Absolutely. Round Table members receive priority concierge access for corporate office catering, executive board dinners, and full-venue private buyouts at 607 Geary St. Select &ldquo;Kinara VIP Corporate Catering&rdquo; below or visit <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener" style="color:var(--accent);">KinaraFusionKitchen.com</a>.
+                Absolutely. Round Table members receive priority concierge access for corporate office catering, executive board dinners, and full-venue private buyouts at 607 Geary St. Select &ldquo;Kinara VIP Corporate Catering&rdquo; below or visit <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener" style="color:var(--accent-bright);">KinaraFusionKitchen.com</a>.
               </p>
             </details>
           </div>
@@ -1220,10 +1266,10 @@
       <div class="container">
         <div class="registry-card">
           <div style="text-align:center;">
-            <span class="eyebrow">Private Membership &bull; Invitation Only</span>
-            <h2 class="section-title" style="margin-bottom:12px;">The Table is <em>Being Set.</em></h2>
+            <span class="eyebrow"><span class="blu">BLU</span>PRNT Private Membership &bull; Invitation Only</span>
+            <h2 class="section-title" style="margin-bottom:12px;">The <span class="blu">BLU</span>PRNT Table is <em>Being Set.</em></h2>
             <p style="font-size:15px;color:var(--text-secondary);font-weight:300;max-width:560px;margin:0 auto;">
-              Request your seat for the inaugural San Francisco dinner on <strong>November 22nd at 6:00 PM</strong> (607 Geary St &bull; 15–20 seats max) and charter access to <strong>The BLUPRNT Round Table</strong>.
+              Request your seat for the inaugural San Francisco dinner on <strong>November 22nd at 6:00 PM</strong> (607 Geary St &bull; 15–20 seats max) and charter access to <strong>The <span class="blu">BLU</span>PRNT Round Table</strong>.
             </p>
           </div>
 
@@ -1283,7 +1329,7 @@
           <div id="rsvpConfirm" class="confirm-box" role="status" aria-live="polite"></div>
 
           <p style="text-align:center;margin-top:22px;font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-muted);">
-            Reservations Desk: <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent);">reservations@bluprntseries.com</a> &bull; 607 Geary St, San Francisco, CA 94102
+            Reservations Desk: <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent-bright);">reservations@bluprntseries.com</a> &bull; 607 Geary St, San Francisco, CA 94102
           </p>
         </div>
       </div>
@@ -1293,7 +1339,7 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <p>&copy; 2026 BLUPRNT — Founder &amp; Owner Dealmaking Series. Private Membership.</p>
+        <p>&copy; 2026 <strong style="color:var(--text-primary);"><span class="blu">BLU</span>PRNT</strong> — Founder &amp; Owner Dealmaking Series. Private Membership.</p>
         <div class="footer-links">
           <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener">KinaraFusionKitchen.com</a>
           <a href="https://precisiondevelopers.com" target="_blank" rel="noopener">PrecisionDevelopers.com</a>
@@ -1355,11 +1401,11 @@
       const box = document.getElementById('rsvpConfirm');
       box.style.display = 'block';
       box.innerHTML = `
-        <strong style="color:var(--accent);display:block;margin-bottom:6px;">Thank you, ${name}. Your request for the November 22nd table (6:00 PM &bull; 607 Geary St) has been recorded.</strong>
+        <strong style="color:var(--accent-bright);display:block;margin-bottom:6px;">Thank you, ${name}. Your request for the November 22nd table (6:00 PM &bull; 607 Geary St) has been recorded.</strong>
         Our curation team reviews every profile to maintain our 15–20 seat limit. Click below to dispatch your reservation directly to our concierge desk:<br/>
         <div style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;">
-          <a href="mailto:reservations@bluprntseries.com?cc=info@precisiondevelopers.com&subject=${subject}&body=${body}" style="background:var(--accent);color:#111110;padding:10px 18px;font-weight:700;">Confirm via Email (reservations@bluprntseries.com) &rarr;</a>
-          <a href="https://wa.me/14152257232?text=${body}" target="_blank" rel="noopener" style="border:1px solid var(--accent);color:var(--accent);padding:10px 18px;font-weight:600;">Confirm via VIP WhatsApp &nearr;</a>
+          <a href="mailto:reservations@bluprntseries.com?cc=info@precisiondevelopers.com&subject=${subject}&body=${body}" style="background:linear-gradient(135deg, var(--accent-bright), var(--accent-deep));color:#ffffff;padding:10px 18px;font-weight:700;">Confirm via Email (reservations@bluprntseries.com) &rarr;</a>
+          <a href="https://wa.me/14152257232?text=${body}" target="_blank" rel="noopener" style="border:1px solid var(--accent-bright);color:var(--accent-bright);padding:10px 18px;font-weight:600;">Confirm via VIP WhatsApp &nearr;</a>
         </div>
       `;
     }
