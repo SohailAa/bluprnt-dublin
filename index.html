@@ -14,16 +14,16 @@
       --bg-surface: #0b162c;
       --bg-elevated: #112240;
       --bg-warm-cream: #f0f6ff;
-      --text-primary: #f8fafc;
-      --text-secondary: #cbd5e1;
-      --text-muted: #7c95b8;
+      --text-primary: #ffffff;
+      --text-secondary: #e2e8f0;
+      --text-muted: #a8c1e3;
       --text-dark: #060d1b;
-      --accent: #4da8ff;
+      --accent: #5cb3ff;
       --accent-bright: #38bdf8;
       --accent-deep: #1d4ed8;
-      --accent-soft: rgba(77, 168, 255, 0.14);
-      --border-hairline: rgba(77, 168, 255, 0.32);
-      --border-subtle: rgba(148, 197, 255, 0.12);
+      --accent-soft: rgba(77, 168, 255, 0.16);
+      --border-hairline: rgba(77, 168, 255, 0.36);
+      --border-subtle: rgba(148, 197, 255, 0.15);
       --font-serif: 'Cormorant Garamond', Georgia, serif;
       --font-display: 'Fraunces', Georgia, serif;
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -45,7 +45,8 @@
       background-color: var(--bg-base);
       color: var(--text-primary);
       font-family: var(--font-sans);
-      line-height: 1.65;
+      font-size: 17px;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -68,13 +69,13 @@
     }
 
     .container {
-      max-width: 1220px;
+      max-width: 1240px;
       margin: 0 auto;
       padding: 0 28px;
     }
 
     .container-narrow {
-      max-width: 880px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 0 28px;
     }
@@ -86,50 +87,51 @@
       left: 0;
       right: 0;
       z-index: 100;
-      background: rgba(6, 13, 27, 0.86);
+      background: rgba(6, 13, 27, 0.88);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--border-subtle);
     }
     .nav-inner {
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
-      padding: 20px 32px;
+      padding: 18px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
+      gap: 16px;
     }
     .brand {
       display: flex;
       align-items: baseline;
-      gap: 12px;
+      gap: 10px;
     }
     .brand-name {
       font-family: var(--font-serif);
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 700;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.14em;
       color: var(--text-primary);
     }
     .brand-tag {
-      font-size: 10px;
-      letter-spacing: 0.24em;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--accent-bright);
-      padding-left: 12px;
+      padding-left: 10px;
       border-left: 1px solid var(--border-hairline);
       white-space: nowrap;
     }
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 20px;
     }
     .nav-links a {
-      font-size: 10.5px;
-      font-weight: 500;
-      letter-spacing: 0.2em;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--text-secondary);
       transition: color 0.2s ease;
@@ -141,11 +143,11 @@
     .btn-nav {
       background: linear-gradient(135deg, var(--accent-bright), var(--accent-deep));
       color: #ffffff;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.18em;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      padding: 12px 22px;
+      padding: 12px 20px;
       border: 1px solid rgba(125, 211, 252, 0.35);
       box-shadow: 0 6px 22px rgba(37, 99, 235, 0.32);
       cursor: pointer;
@@ -165,7 +167,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 136px 28px 92px;
+      padding: 140px 28px 96px;
       overflow: hidden;
     }
     .hero-bg {
@@ -209,7 +211,7 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 auto;
       text-align: center;
     }
@@ -217,41 +219,41 @@
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      padding: 8px 20px;
-      margin-bottom: 22px;
-      background: rgba(11, 22, 44, 0.78);
+      padding: 10px 24px;
+      margin-bottom: 24px;
+      background: rgba(11, 22, 44, 0.84);
       border: 1px solid var(--border-hairline);
-      box-shadow: 0 0 28px rgba(56, 189, 248, 0.14);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.3em;
+      box-shadow: 0 0 28px rgba(56, 189, 248, 0.16);
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--text-primary);
     }
     .hero-brand-pill .dot {
-      width: 7px;
-      height: 7px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: var(--accent-bright);
       box-shadow: 0 0 10px var(--accent-bright);
     }
     .eyebrow {
-      font-size: 10.5px;
-      font-weight: 600;
-      letter-spacing: 0.34em;
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
       color: var(--accent-bright);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       display: block;
     }
     .hero h1 {
       font-family: var(--font-serif);
-      font-size: clamp(46px, 6.8vw, 84px);
+      font-size: clamp(50px, 7.2vw, 88px);
       font-weight: 500;
-      line-height: 1.04;
+      line-height: 1.05;
       letter-spacing: -0.02em;
       color: var(--text-primary);
-      margin-bottom: 26px;
+      margin-bottom: 28px;
     }
     .hero h1 em {
       font-style: italic;
@@ -259,24 +261,24 @@
       font-weight: 500;
     }
     .hero-sub {
-      font-size: clamp(16px, 1.8vw, 19.5px);
-      font-weight: 300;
+      font-size: clamp(18.5px, 2.1vw, 22px);
+      font-weight: 400;
       color: var(--text-secondary);
-      max-width: 690px;
-      margin: 0 auto 36px;
-      line-height: 1.7;
+      max-width: 760px;
+      margin: 0 auto 38px;
+      line-height: 1.72;
     }
     .hero-sub strong {
       color: var(--text-primary);
-      font-weight: 500;
+      font-weight: 600;
     }
 
     /* Inline Hero Invitation Bar (Founder Dinners + Investor Dinner Club hybrid) */
     .hero-form {
       display: flex;
-      max-width: 540px;
-      margin: 0 auto 18px;
-      background: rgba(11, 22, 44, 0.92);
+      max-width: 590px;
+      margin: 0 auto 20px;
+      background: rgba(11, 22, 44, 0.94);
       border: 1px solid var(--border-hairline);
       box-shadow: 0 14px 40px rgba(3, 8, 20, 0.65);
     }
@@ -284,26 +286,26 @@
       flex: 1;
       background: transparent;
       border: none;
-      padding: 18px 20px;
+      padding: 19px 22px;
       color: var(--text-primary);
       font-family: var(--font-sans);
-      font-size: 13px;
+      font-size: 16px;
       outline: none;
     }
     .hero-form input::placeholder {
       color: var(--text-muted);
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      font-size: 11px;
+      font-size: 13.5px;
     }
     .hero-form button {
       background: linear-gradient(135deg, var(--accent-bright), var(--accent-deep));
       color: #ffffff;
       border: none;
-      padding: 18px 28px;
-      font-size: 11px;
+      padding: 19px 30px;
+      font-size: 13.5px;
       font-weight: 700;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       cursor: pointer;
       white-space: nowrap;
@@ -313,10 +315,11 @@
       opacity: 0.92;
     }
     .hero-note {
-      font-size: 11px;
-      letter-spacing: 0.18em;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--text-secondary);
     }
 
     /* 4-Column Minimal Proof Bar (Founder Dinners style) */
@@ -324,7 +327,7 @@
       background: var(--bg-surface);
       border-top: 1px solid var(--border-subtle);
       border-bottom: 1px solid var(--border-subtle);
-      padding: 36px 0;
+      padding: 40px 0;
     }
     .proof-grid {
       display: grid;
@@ -333,17 +336,18 @@
     }
     .proof-item {
       border-left: 2px solid var(--accent-bright);
-      padding-left: 20px;
+      padding-left: 22px;
     }
     .proof-item h3 {
       font-family: var(--font-serif);
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 600;
       color: var(--accent-bright);
-      margin-bottom: 3px;
+      margin-bottom: 4px;
     }
     .proof-item p {
-      font-size: 12.5px;
+      font-size: 15.5px;
+      font-weight: 400;
       color: var(--text-secondary);
     }
 
@@ -357,13 +361,13 @@
     }
     .section-header.center {
       text-align: center;
-      max-width: 720px;
+      max-width: 780px;
       margin-left: auto;
       margin-right: auto;
     }
     .section-title {
       font-family: var(--font-serif);
-      font-size: clamp(36px, 4.5vw, 54px);
+      font-size: clamp(40px, 4.8vw, 58px);
       font-weight: 500;
       line-height: 1.12;
       color: var(--text-primary);
@@ -385,10 +389,10 @@
     }
     .step-num {
       font-family: var(--font-serif);
-      font-size: 96px;
+      font-size: 100px;
       font-style: italic;
       line-height: 0.85;
-      color: rgba(56, 189, 248, 0.16);
+      color: rgba(56, 189, 248, 0.18);
       position: absolute;
       top: -12px;
       left: 0;
@@ -403,16 +407,16 @@
     }
     .step-inner h3 {
       font-family: var(--font-serif);
-      font-size: 28px;
+      font-size: 32px;
       font-style: italic;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--accent-bright);
       margin-bottom: 12px;
     }
     .step-inner p {
-      font-size: 14.5px;
+      font-size: 17px;
       color: var(--text-secondary);
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.75;
     }
 
@@ -426,10 +430,10 @@
     }
     .quote-banner blockquote {
       font-family: var(--font-serif);
-      font-size: clamp(30px, 4.2vw, 50px);
+      font-size: clamp(32px, 4.4vw, 52px);
       font-weight: 500;
       line-height: 1.22;
-      max-width: 920px;
+      max-width: 940px;
       margin: 0 auto;
       color: var(--text-primary);
     }
@@ -453,15 +457,16 @@
       display: flex;
       justify-content: space-between;
       gap: 16px;
-      padding: 15px 0;
+      padding: 16px 0;
       border-bottom: 1px solid var(--border-subtle);
-      font-size: 14px;
+      font-size: 16.5px;
     }
     .dossier-row .d-lbl {
-      font-size: 11px;
-      letter-spacing: 0.18em;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: var(--accent-bright);
     }
     .dossier-row .d-val {
       color: var(--text-primary);
@@ -498,11 +503,12 @@
       position: absolute;
       left: 16px;
       bottom: 14px;
-      background: rgba(6, 13, 27, 0.84);
+      background: rgba(6, 13, 27, 0.88);
       backdrop-filter: blur(8px);
-      padding: 5px 12px;
-      font-size: 10.5px;
-      letter-spacing: 0.16em;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--text-primary);
       border-left: 2px solid var(--accent-bright);
@@ -520,17 +526,17 @@
     }
     .pillar-col h3 {
       font-family: var(--font-serif);
-      font-size: 24px;
+      font-size: 28px;
       font-style: italic;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--accent-bright);
       margin-bottom: 10px;
     }
     .pillar-col p {
-      font-size: 14px;
+      font-size: 16.5px;
       color: var(--text-secondary);
-      font-weight: 300;
-      line-height: 1.7;
+      font-weight: 400;
+      line-height: 1.75;
     }
 
     /* Founding Partners & Real Estate Showcase (Clean Editorial Cards) */
@@ -594,43 +600,46 @@
       flex: 1;
     }
     .partner-ed-eyebrow {
-      font-size: 10px;
-      letter-spacing: 0.24em;
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--accent-bright);
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       display: block;
     }
     .partner-ed-body h3 {
       font-family: var(--font-serif);
-      font-size: 28px;
-      font-weight: 500;
+      font-size: 32px;
+      font-weight: 600;
       color: var(--text-primary);
       margin-bottom: 12px;
     }
     .partner-ed-body p {
-      font-size: 14px;
+      font-size: 16.5px;
       color: var(--text-secondary);
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 20px;
-      line-height: 1.7;
+      line-height: 1.72;
     }
     .partner-highlights {
       list-style: none;
       border-top: 1px solid var(--border-subtle);
       padding-top: 14px;
-      font-size: 13px;
+      font-size: 15.5px;
       color: var(--text-secondary);
     }
     .partner-highlights li {
-      padding: 6px 0;
+      padding: 9px 0;
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid rgba(148, 197, 255, 0.06);
+      gap: 12px;
+      border-bottom: 1px solid rgba(148, 197, 255, 0.08);
     }
     .partner-highlights li strong {
       color: var(--accent-bright);
-      font-weight: 500;
+      font-weight: 600;
+      text-align: right;
     }
     .partner-ed-footer {
       padding: 18px 26px;
@@ -639,8 +648,9 @@
       justify-content: space-between;
       align-items: center;
       gap: 12px;
-      font-size: 10.5px;
-      letter-spacing: 0.14em;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--accent-bright);
     }
@@ -660,7 +670,7 @@
     }
     details.faq-item {
       border-bottom: 1px solid var(--border-subtle);
-      padding: 22px 0;
+      padding: 24px 0;
     }
     details.faq-item summary {
       list-style: none;
@@ -669,8 +679,8 @@
       justify-content: space-between;
       align-items: center;
       font-family: var(--font-serif);
-      font-size: 22px;
-      font-weight: 500;
+      font-size: 25px;
+      font-weight: 600;
       color: var(--text-primary);
     }
     details.faq-item summary::-webkit-details-marker {
@@ -678,7 +688,7 @@
     }
     details.faq-item summary .plus {
       font-family: var(--font-sans);
-      font-size: 18px;
+      font-size: 20px;
       color: var(--accent-bright);
       transition: transform 0.2s ease;
     }
@@ -686,10 +696,10 @@
       transform: rotate(45deg);
     }
     details.faq-item p {
-      margin-top: 12px;
-      font-size: 14.5px;
+      margin-top: 14px;
+      font-size: 17px;
       color: var(--text-secondary);
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.75;
     }
 
@@ -700,27 +710,28 @@
       padding: 112px 0;
     }
     .registry-card {
-      max-width: 760px;
+      max-width: 800px;
       margin: 0 auto;
       background: var(--bg-base);
       border: 1px solid var(--border-hairline);
       box-shadow: 0 24px 64px rgba(3, 8, 20, 0.7);
-      padding: 52px;
+      padding: 56px;
     }
     .form-grid {
       display: grid;
-      gap: 18px;
-      margin-top: 32px;
+      gap: 20px;
+      margin-top: 34px;
     }
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      gap: 20px;
     }
     .field label {
       display: block;
-      font-size: 10.5px;
-      letter-spacing: 0.2em;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--text-secondary);
       margin-bottom: 8px;
@@ -731,10 +742,10 @@
       width: 100%;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      padding: 15px 16px;
+      padding: 16px 18px;
       color: var(--text-primary);
       font-family: var(--font-sans);
-      font-size: 14px;
+      font-size: 16px;
       outline: none;
       transition: border-color 0.2s;
     }
@@ -756,14 +767,14 @@
       color: #ffffff;
       border: 1px solid rgba(125, 211, 252, 0.35);
       box-shadow: 0 8px 28px rgba(37, 99, 235, 0.35);
-      padding: 18px 28px;
-      font-size: 11.5px;
+      padding: 20px 28px;
+      font-size: 14px;
       font-weight: 700;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       cursor: pointer;
       transition: opacity 0.2s, transform 0.2s;
-      margin-top: 6px;
+      margin-top: 8px;
     }
     .btn-submit:hover {
       opacity: 0.94;
@@ -771,23 +782,24 @@
     }
     .confirm-box {
       display: none;
-      margin-top: 20px;
-      padding: 18px 20px;
-      background: rgba(56, 189, 248, 0.1);
+      margin-top: 22px;
+      padding: 20px 22px;
+      background: rgba(56, 189, 248, 0.12);
       border: 1px solid var(--accent-bright);
       color: var(--text-primary);
-      font-size: 13.5px;
+      font-size: 16px;
     }
 
     /* Footer */
     footer {
       background: #040914;
       border-top: 1px solid var(--border-subtle);
-      padding: 44px 0;
-      font-size: 11px;
-      letter-spacing: 0.18em;
+      padding: 48px 0;
+      font-size: 13.5px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: var(--text-secondary);
     }
     .footer-inner {
       display: flex;
@@ -988,10 +1000,10 @@
               Kinara Fusion Kitchen.<br />
               <em>November 22nd at 6:00 PM.</em>
             </h2>
-            <p style="font-size:15px;color:var(--text-secondary);font-weight:300;margin-bottom:16px;">
+            <p style="font-size:17.5px;color:var(--text-secondary);font-weight:400;margin-bottom:18px;">
               Set under the chandeliers of <strong>Kinara Fusion Kitchen (607 Geary St, San Francisco 94102)</strong>, our first evening brings together 15 to 20 vetted founders and business owners for an intimate, all-expense-paid 3-course culinary experience.
             </p>
-            <p style="font-size:15px;color:var(--text-secondary);font-weight:300;">
+            <p style="font-size:17.5px;color:var(--text-secondary);font-weight:400;">
               The bespoke 3-course tasting menu is being curated directly with <strong>Shahil</strong> and the Kinara culinary team, blending refined South Asian heritage with modern California-American craft and zero-proof botanical pairings.
             </p>
 
@@ -1023,8 +1035,8 @@
             </div>
 
             <div style="display:flex;gap:14px;flex-wrap:wrap;">
-              <a href="#register" class="btn-nav" style="padding:15px 28px;">Request Your Seat</a>
-              <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener" style="padding:14px 22px;border:1px solid var(--border-subtle);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-secondary);">
+              <a href="#register" class="btn-nav" style="padding:16px 28px;">Request Your Seat</a>
+              <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener" style="padding:15px 24px;border:1px solid var(--border-hairline);font-size:13.5px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-primary);">
                 Visit KinaraFusionKitchen.com &nearr;
               </a>
             </div>
@@ -1201,8 +1213,8 @@
             <h2 class="section-title" style="margin-bottom:16px;">
               Everything you want to know <em>before you show up.</em>
             </h2>
-            <p style="font-size:14.5px;color:var(--text-secondary);font-weight:300;">
-              Questions regarding the November 22nd dinner at Kinara Fusion Kitchen or The <span class="blu">BLU</span>PRNT Round Table? Reach our reservations desk directly at <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent-bright);text-decoration:underline;">reservations@bluprntseries.com</a>.
+            <p style="font-size:17px;color:var(--text-secondary);font-weight:400;">
+              Questions regarding the November 22nd dinner at Kinara Fusion Kitchen or The <span class="blu">BLU</span>PRNT Round Table? Reach our reservations desk directly at <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent-bright);text-decoration:underline;font-weight:600;">reservations@bluprntseries.com</a>.
             </p>
           </div>
 
@@ -1268,7 +1280,7 @@
           <div style="text-align:center;">
             <span class="eyebrow"><span class="blu">BLU</span>PRNT Private Membership &bull; Invitation Only</span>
             <h2 class="section-title" style="margin-bottom:12px;">The <span class="blu">BLU</span>PRNT Table is <em>Being Set.</em></h2>
-            <p style="font-size:15px;color:var(--text-secondary);font-weight:300;max-width:560px;margin:0 auto;">
+            <p style="font-size:17.5px;color:var(--text-secondary);font-weight:400;max-width:620px;margin:0 auto;">
               Request your seat for the inaugural San Francisco dinner on <strong>November 22nd at 6:00 PM</strong> (607 Geary St &bull; 15–20 seats max) and charter access to <strong>The <span class="blu">BLU</span>PRNT Round Table</strong>.
             </p>
           </div>
@@ -1328,8 +1340,8 @@
 
           <div id="rsvpConfirm" class="confirm-box" role="status" aria-live="polite"></div>
 
-          <p style="text-align:center;margin-top:22px;font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-muted);">
-            Reservations Desk: <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent-bright);">reservations@bluprntseries.com</a> &bull; 607 Geary St, San Francisco, CA 94102
+          <p style="text-align:center;margin-top:24px;font-size:13px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-secondary);">
+            Reservations Desk: <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent-bright);font-weight:700;">reservations@bluprntseries.com</a> &bull; 607 Geary St, San Francisco, CA 94102
           </p>
         </div>
       </div>
