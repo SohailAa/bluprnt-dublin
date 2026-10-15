@@ -3,42 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BLUPRNT — Founder &amp; Owner Dealmaking Series | Inaugural SF Dinner at Kinara Fusion Kitchen (607 Geary St)</title>
-  <meta name="description" content="BLUPRNT is an invitation-only Founder & Owner Dealmaking Series for >$5M revenue business owners. Chapter SF-01 hosts 12–15 vetted owners at Kinara Fusion Kitchen (607 Geary St, San Francisco) for an all-expense-paid 3-course tasting dinner, introducing US & Dubai real estate opportunities (PrecisionDevelopers.com & PrecisionRealty.ae) and The BLUPRNT Round Table Community." />
+  <title>BLUPRNT — Founder &amp; Owner Dealmaking Series | Private Dinners for &gt;$5M Owners</title>
+  <meta name="description" content="Intimate, invitation-only dinners connecting business owners generating $5M+ in revenue. Inaugural San Francisco dinner on November 22nd at 6:00 PM at Kinara Fusion Kitchen (607 Geary St). Limited to 15–20 seats." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg-blueprint: #040812;
-      --bg-navy: #070f1e;
-      --bg-card: #0c172c;
-      --bg-elevated: #11213e;
-      --cyan: #38bdf8;
-      --cyan-bright: #7dd3fc;
-      --cyan-glow: rgba(56, 189, 248, 0.16);
-      --cobalt: #0284c7;
-      --gold: #d4af37;
-      --gold-light: #f5df90;
-      --gold-muted: rgba(212, 175, 55, 0.16);
-      --amber: #f59e0b;
-      --emerald: #10b981;
-      --emerald-muted: rgba(16, 185, 129, 0.15);
-      --crimson: #ef4444;
-      --text-main: #f8fafc;
-      --text-secondary: #cbd5e1;
-      --text-muted: #94a3b8;
-      --border-grid: rgba(56, 189, 248, 0.15);
-      --border-subtle: rgba(255, 255, 255, 0.09);
-      --border-gold: rgba(212, 175, 55, 0.45);
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --radius-sm: 8px;
-      --shadow-deep: 0 26px 70px rgba(0, 0, 0, 0.72);
-      --font-display: 'Space Grotesk', sans-serif;
+      --bg-base: #111110;
+      --bg-surface: #171614;
+      --bg-elevated: #1f1d1a;
+      --bg-warm-cream: #f6f1e7;
+      --text-primary: #f5f2eb;
+      --text-secondary: #b8b2a6;
+      --text-muted: #7e786d;
+      --text-dark: #181614;
+      --accent: #e5be73;
+      --accent-deep: #c99b49;
+      --accent-soft: rgba(229, 190, 115, 0.14);
+      --border-hairline: rgba(229, 190, 115, 0.18);
+      --border-subtle: rgba(255, 255, 255, 0.08);
       --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-display: 'Fraunces', Georgia, serif;
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
     }
 
     * {
@@ -49,21 +36,16 @@
 
     html {
       scroll-behavior: smooth;
-      background-color: var(--bg-blueprint);
-      color: var(--text-main);
+      background-color: var(--bg-base);
+      color: var(--text-primary);
       font-family: var(--font-sans);
-      line-height: 1.6;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
     }
 
     body {
+      background-color: var(--bg-base);
       overflow-x: clip;
-      background-color: var(--bg-blueprint);
-      background-image:
-        radial-gradient(circle at 14% 8%, rgba(212, 175, 55, 0.14), transparent 36%),
-        radial-gradient(circle at 86% 16%, rgba(56, 189, 248, 0.14), transparent 38%),
-        linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
-      background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
     }
 
     a {
@@ -76,2238 +58,1308 @@
       display: block;
     }
 
-    /* Top Scarcity Telemetry Ribbon */
-    .telemetry-bar {
-      background: linear-gradient(90deg, #050b18 0%, #10203b 50%, #050b18 100%);
-      border-bottom: 1px solid var(--border-gold);
-      padding: 9px 28px;
-      font-family: var(--font-mono);
-      font-size: 11px;
-      color: var(--text-secondary);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .telemetry-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .pulse-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--gold);
-      box-shadow: 0 0 12px var(--gold);
-      animation: pulseGlow 2s infinite;
-    }
-    @keyframes pulseGlow {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.25); opacity: 0.7; }
-    }
-    .telemetry-tag {
-      background: var(--gold-muted);
-      border: 1px solid var(--gold);
-      color: var(--gold-light);
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-weight: 700;
-      font-size: 10.5px;
-      letter-spacing: 0.08em;
-    }
-    .telemetry-right {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .telemetry-right a {
-      color: var(--cyan-bright);
-      transition: opacity 0.2s;
-    }
-    .telemetry-right a:hover {
-      opacity: 0.85;
-      text-decoration: underline;
+    .container {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 28px;
     }
 
-    /* Sticky Navbar */
+    .container-narrow {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Minimal Fixed Navigation (Investor Dinner Club + Founder Dinners inspired) */
     .navbar {
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
-      background: rgba(4, 8, 18, 0.88);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-grid);
-      padding: 14px 34px;
+      background: rgba(17, 17, 16, 0.84);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 20px 32px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 18px;
+      gap: 24px;
     }
     .brand {
       display: flex;
-      align-items: center;
-      gap: 14px;
+      align-items: baseline;
+      gap: 12px;
     }
-    .brand-mark {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, rgba(212,175,55,0.28), rgba(56,189,248,0.14));
-      border: 1.5px solid var(--gold);
-      display: grid;
-      place-items: center;
-      font-family: var(--font-mono);
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--gold-light);
-      box-shadow: 0 0 22px rgba(212, 175, 55, 0.22);
-    }
-    .brand-title {
-      font-family: var(--font-display);
-      font-size: 22px;
-      font-weight: 700;
+    .brand-name {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 600;
       letter-spacing: 0.18em;
-      color: var(--text-main);
-      line-height: 1.05;
+      color: var(--text-primary);
     }
-    .brand-sub {
-      font-family: var(--font-mono);
-      font-size: 9.5px;
+    .brand-tag {
+      font-size: 10px;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--gold-light);
-      margin-top: 3px;
-      display: block;
+      color: var(--accent);
+      white-space: nowrap;
     }
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 22px;
-      font-size: 13px;
+      gap: 28px;
+    }
+    .nav-links a {
+      font-size: 10.5px;
       font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
       color: var(--text-secondary);
-    }
-    .nav-links a:hover {
-      color: var(--gold-light);
-    }
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      font-family: var(--font-sans);
-      font-size: 13.5px;
-      font-weight: 600;
-      padding: 11px 20px;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: all 0.22s ease;
-      border: 1px solid transparent;
+      transition: color 0.2s ease;
       white-space: nowrap;
     }
-    .btn-gold {
-      background: linear-gradient(135deg, #f3d266 0%, #c79a22 100%);
-      color: #040812;
-      font-weight: 700;
-      box-shadow: 0 10px 28px rgba(212, 175, 55, 0.34);
+    .nav-links a:hover {
+      color: var(--accent);
     }
-    .btn-gold:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 34px rgba(212, 175, 55, 0.5);
-    }
-    .btn-cyan {
-      background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
-      color: #040812;
-      font-weight: 700;
-      box-shadow: 0 10px 26px rgba(56, 189, 248, 0.32);
-    }
-    .btn-cyan:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 32px rgba(56, 189, 248, 0.48);
-    }
-    .btn-outline {
-      background: rgba(255, 255, 255, 0.03);
-      color: var(--text-main);
-      border-color: var(--border-grid);
-    }
-    .btn-outline:hover {
-      background: var(--gold-muted);
-      border-color: var(--gold);
-      color: var(--gold-light);
-    }
-
-    /* Layout & Typography */
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 28px;
-    }
-    section {
-      padding: 92px 0;
-      position: relative;
-      scroll-margin-top: 80px;
-    }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-mono);
+    .btn-nav {
+      background: var(--accent);
+      color: #111110;
       font-size: 11px;
       font-weight: 600;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--gold-light);
-      background: var(--gold-muted);
-      border: 1px solid var(--border-gold);
-      padding: 6px 14px;
-      border-radius: 999px;
-      margin-bottom: 18px;
+      padding: 12px 22px;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity 0.2s ease, transform 0.2s ease;
     }
-    .eyebrow-cyan {
-      color: var(--cyan-bright);
-      background: var(--cyan-glow);
-      border-color: rgba(56, 189, 248, 0.35);
-    }
-    .section-title {
-      font-family: var(--font-display);
-      font-size: clamp(30px, 4vw, 48px);
-      font-weight: 700;
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin-bottom: 16px;
-    }
-    .section-title em {
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-weight: 600;
-      color: var(--gold-light);
-    }
-    .section-desc {
-      font-size: 16.5px;
-      color: var(--text-secondary);
-      max-width: 780px;
+    .btn-nav:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
     }
 
     /* Hero Section */
     .hero {
-      padding: 54px 0 78px;
-      border-bottom: 1px solid var(--border-grid);
-    }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 42px;
-      align-items: center;
-    }
-    .hero-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    .badge {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 600;
-      padding: 5px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border-subtle);
-      background: rgba(255, 255, 255, 0.04);
-      color: var(--text-secondary);
-    }
-    .badge-gold {
-      border-color: var(--border-gold);
-      background: var(--gold-muted);
-      color: var(--gold-light);
-    }
-    .badge-cyan {
-      border-color: rgba(56, 189, 248, 0.4);
-      background: var(--cyan-glow);
-      color: var(--cyan-bright);
-    }
-    .badge-emerald {
-      border-color: rgba(16, 185, 129, 0.45);
-      background: var(--emerald-muted);
-      color: #6ee7b7;
-    }
-    .hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(36px, 4.6vw, 60px);
-      font-weight: 700;
-      line-height: 1.05;
-      letter-spacing: -0.025em;
-      margin-bottom: 18px;
-    }
-    .hero h1 em {
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-weight: 600;
-      color: var(--gold-light);
-    }
-    .hero-lead {
-      font-size: 16.5px;
-      color: var(--text-secondary);
-      margin-bottom: 22px;
-      max-width: 650px;
-    }
-
-    /* Inaugural Dinner Spotlight Callout inside Hero */
-    .inaugural-callout {
-      background: linear-gradient(135deg, rgba(212, 175, 55, 0.14) 0%, rgba(12, 23, 44, 0.92) 100%);
-      border: 1.5px solid var(--border-gold);
-      border-radius: var(--radius-md);
-      padding: 18px 20px;
-      margin-bottom: 24px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
-    .inaugural-item .lbl {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--gold-light);
-      display: block;
-      margin-bottom: 3px;
-    }
-    .inaugural-item .val {
-      font-family: var(--font-display);
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text-main);
-      line-height: 1.25;
-    }
-    .inaugural-item .sub {
-      font-size: 11.5px;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
-
-    .hero-cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 26px;
-    }
-
-    /* Flywheel Bar */
-    .formula-box {
-      background: rgba(12, 23, 44, 0.85);
-      border: 1px solid var(--border-grid);
-      border-radius: var(--radius-md);
-      padding: 16px 20px;
-    }
-    .formula-title {
-      font-family: var(--font-mono);
-      font-size: 10.5px;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--cyan-bright);
-      margin-bottom: 8px;
-    }
-    .formula-steps {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 8px;
-      font-size: 12.5px;
-      font-weight: 600;
-      color: var(--text-main);
-    }
-    .formula-steps .arrow {
-      color: var(--gold);
-      font-family: var(--font-mono);
-    }
-
-    /* Hero Interactive 4-Tab Visual Card */
-    .stage-card {
-      background: var(--bg-card);
-      border: 1.5px solid var(--border-gold);
-      border-radius: var(--radius-lg);
-      padding: 18px;
-      box-shadow: var(--shadow-deep);
       position: relative;
-    }
-    .stage-card-top {
+      min-height: 92vh;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
-      gap: 12px;
-    }
-    .stage-switcher {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 6px;
-      margin-bottom: 12px;
-    }
-    .stage-tab {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-secondary);
-      padding: 8px 8px;
-      border-radius: var(--radius-sm);
-      font-family: var(--font-mono);
-      font-size: 10.5px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-      text-align: center;
-    }
-    .stage-tab.active,
-    .stage-tab:hover {
-      background: var(--gold-muted);
-      border-color: var(--gold);
-      color: var(--gold-light);
-    }
-    .stage-frame {
-      position: relative;
-      border-radius: var(--radius-md);
+      justify-content: center;
+      padding: 130px 28px 90px;
       overflow: hidden;
-      aspect-ratio: 16 / 10.5;
-      background: #02050c;
-      border: 1px solid var(--border-subtle);
-      margin-bottom: 14px;
     }
-    .stage-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-    .stage-frame:hover img {
-      transform: scale(1.03);
-    }
-    .stage-overlay {
+    .hero-bg {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(4, 8, 18, 0.15) 0%, rgba(4, 8, 18, 0.35) 50%, rgba(4, 8, 18, 0.94) 100%);
+      z-index: 0;
     }
-    .stage-chip {
-      position: absolute;
-      top: 14px;
-      left: 14px;
-      background: rgba(4, 8, 18, 0.86);
-      backdrop-filter: blur(8px);
-      border: 1px solid var(--gold);
-      color: var(--gold-light);
-      font-family: var(--font-mono);
-      font-size: 10.5px;
-      font-weight: 700;
-      padding: 5px 11px;
-      border-radius: 999px;
-      letter-spacing: 0.08em;
-    }
-    .stage-caption {
-      position: absolute;
-      left: 16px;
-      right: 16px;
-      bottom: 14px;
-      z-index: 2;
-    }
-    .stage-kpis {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
-    .stage-kpi {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-sm);
-      padding: 10px 12px;
-      text-align: center;
-    }
-    .stage-kpi strong {
-      display: block;
-      font-family: var(--font-display);
-      font-size: 19px;
-      color: var(--gold-light);
-    }
-    .stage-kpi span {
-      font-size: 11px;
-      color: var(--text-muted);
-    }
-
-    /* Partner Logos & Ecosystem Strip */
-    .partner-strip {
-      background: var(--bg-navy);
-      border-bottom: 1px solid var(--border-grid);
-      padding: 28px 0;
-    }
-    .partner-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      align-items: center;
-    }
-    .partner-card {
-      background: rgba(255, 255, 255, 0.025);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 16px 18px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      transition: border-color 0.2s, transform 0.2s;
-    }
-    .partner-card:hover {
-      border-color: var(--gold);
-      transform: translateY(-2px);
-    }
-    .partner-logo-wrap {
-      width: 58px;
-      height: 44px;
-      border-radius: 8px;
-      background: rgba(4, 8, 18, 0.8);
-      border: 1px solid var(--border-subtle);
-      display: grid;
-      place-items: center;
-      padding: 5px;
-      flex-shrink: 0;
-    }
-    .partner-logo-wrap img {
-      max-height: 32px;
-      width: auto;
-      object-fit: contain;
-    }
-    .partner-info .p-role {
-      font-family: var(--font-mono);
-      font-size: 9.5px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--gold-light);
-    }
-    .partner-info .p-name {
-      font-family: var(--font-display);
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-    .partner-info .p-url {
-      font-size: 11.5px;
-      color: var(--cyan-bright);
-    }
-
-    /* Section 2: Kinara Venue & Complimentary 3-Course Tasting Offer */
-    .offer-banner {
-      background: linear-gradient(135deg, #101d35 0%, #070e1c 100%);
-      border: 1.5px solid var(--border-gold);
-      border-radius: var(--radius-lg);
-      padding: 36px;
-      margin-bottom: 42px;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 34px;
-      align-items: center;
-      box-shadow: var(--shadow-deep);
-    }
-    .offer-seal {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 700;
-      color: #040812;
-      background: linear-gradient(135deg, #f5df90, #d4af37);
-      padding: 5px 13px;
-      border-radius: 999px;
-      margin-bottom: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-    .offer-rules {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin: 20px 0 24px;
-    }
-    .offer-rule {
-      background: rgba(4, 8, 18, 0.65);
-      border: 1px solid var(--border-subtle);
-      border-left: 3px solid var(--gold);
-      border-radius: var(--radius-sm);
-      padding: 12px 14px;
-    }
-    .offer-rule strong {
-      display: block;
-      font-size: 13.5px;
-      color: var(--text-main);
-      margin-bottom: 2px;
-    }
-    .offer-rule span {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-    .venue-media-box {
-      position: relative;
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      border: 1px solid var(--border-gold);
-      background: #02050b;
-    }
-    .venue-media-box video {
-      width: 100%;
-      height: 310px;
-      object-fit: cover;
-      display: block;
-    }
-    .venue-Gallery-strip {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      padding: 8px;
-      background: #040812;
-    }
-    .venue-Gallery-strip img {
-      width: 100%;
-      height: 82px;
-      object-fit: cover;
-      border-radius: 6px;
-      border: 1px solid var(--border-subtle);
-    }
-
-    /* 3-Course Tasting Menu Styling */
-    .menu-header-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 26px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border-gold);
-    }
-    .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-    .course-card {
-      background: linear-gradient(180deg, #0d1930 0%, #081020 100%);
-      border: 1px solid var(--border-gold);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .course-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 22px 55px rgba(212, 175, 55, 0.16);
-    }
-    .course-img-pair {
-      display: grid;
-      grid-template-columns: 1.35fr 0.65fr;
-      gap: 4px;
-      height: 205px;
-      background: #040812;
-      border-bottom: 1px solid var(--border-gold);
-    }
-    .course-img-pair img {
+    .hero-bg img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
+      filter: brightness(0.42) contrast(1.05);
     }
-    .course-body {
-      padding: 24px;
-      flex: 1;
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(17, 17, 16, 0.88) 0%,
+        rgba(17, 17, 16, 0.62) 48%,
+        rgba(17, 17, 16, 0.98) 100%
+      );
     }
-    .course-num {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--gold-light);
-      letter-spacing: 0.15em;
+    .hero-glow {
+      position: absolute;
+      width: 640px;
+      height: 640px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: rgba(229, 190, 115, 0.08);
+      filter: blur(110px);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .eyebrow {
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.34em;
       text-transform: uppercase;
-      margin-bottom: 6px;
+      color: var(--accent);
+      margin-bottom: 22px;
       display: block;
     }
-    .course-card h3 {
+    .hero h1 {
       font-family: var(--font-serif);
-      font-size: 27px;
-      font-weight: 700;
-      color: var(--text-main);
-      line-height: 1.15;
-      margin-bottom: 12px;
+      font-size: clamp(46px, 7vw, 86px);
+      font-weight: 500;
+      line-height: 1.04;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 26px;
     }
-    .dish-list {
-      list-style: none;
-      margin-bottom: 16px;
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 500;
     }
-    .dish-list li {
-      padding: 8px 0;
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
-      font-size: 13.5px;
+    .hero-sub {
+      font-size: clamp(16px, 1.8vw, 19.5px);
+      font-weight: 300;
       color: var(--text-secondary);
+      max-width: 670px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
     }
-    .dish-list li strong {
-      color: var(--gold-light);
-      font-weight: 600;
-    }
-    .course-footer {
-      padding: 13px 24px;
-      background: rgba(4, 8, 18, 0.65);
-      border-top: 1px solid var(--border-subtle);
-      font-family: var(--font-mono);
-      font-size: 11px;
-      color: var(--cyan-bright);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .hero-sub strong {
+      color: var(--text-primary);
+      font-weight: 500;
     }
 
-    /* Section 3: High-Hype Real Estate Deal Flow (PrecisionDevelopers.com & PrecisionRealty.ae) */
-    .wealth-wing-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-      margin-top: 38px;
+    /* Inline Hero Invitation Bar (Founder Dinners + Investor Dinner Club hybrid) */
+    .hero-form {
+      display: flex;
+      max-width: 540px;
+      margin: 0 auto 18px;
+      background: rgba(23, 22, 20, 0.92);
+      border: 1px solid var(--border-hairline);
     }
-    .wealth-wing {
-      background: linear-gradient(165deg, #0d1a32 0%, #070e1c 100%);
-      border: 1.5px solid var(--border-grid);
-      border-radius: var(--radius-lg);
-      padding: 32px;
+    .hero-form input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      padding: 18px 20px;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      outline: none;
+    }
+    .hero-form input::placeholder {
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+    .hero-form button {
+      background: linear-gradient(90deg, var(--accent), var(--accent-deep));
+      color: #111110;
+      border: none;
+      padding: 18px 28px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .hero-form button:hover {
+      opacity: 0.92;
+    }
+    .hero-note {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* 4-Column Minimal Proof Bar (Founder Dinners style) */
+    .proof-strip {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 36px 0;
+    }
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+    }
+    .proof-item {
+      border-left: 1px solid var(--border-hairline);
+      padding-left: 20px;
+    }
+    .proof-item h3 {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 3px;
+    }
+    .proof-item p {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+    }
+
+    /* Section Spacing & Editorial Headings */
+    section {
+      padding: 112px 0;
+      scroll-margin-top: 76px;
+    }
+    .section-header {
+      margin-bottom: 64px;
+    }
+    .section-header.center {
+      text-align: center;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 4.5vw, 54px);
+      font-weight: 500;
+      line-height: 1.12;
+      color: var(--text-primary);
+    }
+    .section-title em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    /* 01 / 02 / 03 Process Steps (Investor Dinner Club style) */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 44px;
+    }
+    .step-card {
+      position: relative;
+      padding-top: 32px;
+    }
+    .step-num {
+      font-family: var(--font-serif);
+      font-size: 96px;
+      font-style: italic;
+      line-height: 0.85;
+      color: rgba(229, 190, 115, 0.13);
+      position: absolute;
+      top: -12px;
+      left: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+    .step-inner {
+      position: relative;
+      z-index: 1;
+      border-left: 1px solid var(--border-hairline);
+      padding-left: 26px;
+    }
+    .step-inner h3 {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .step-inner p {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.75;
+    }
+
+    /* Editorial Quote Interlude (Founder Dinners style) */
+    .quote-banner {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 96px 28px;
+      text-align: center;
+    }
+    .quote-banner blockquote {
+      font-family: var(--font-serif);
+      font-size: clamp(30px, 4.2vw, 50px);
+      font-weight: 500;
+      line-height: 1.22;
+      max-width: 920px;
+      margin: 0 auto;
+      color: var(--text-primary);
+    }
+    .quote-banner blockquote em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    /* Inaugural Dinner Dossier & Venue Gallery (607 Geary St, SF) */
+    .dinner-layout {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .dossier-table {
+      margin: 30px 0;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .dossier-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 14px;
+    }
+    .dossier-row .d-lbl {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .dossier-row .d-val {
+      color: var(--text-primary);
+      font-weight: 500;
+      text-align: right;
+    }
+    .gallery-bento {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-surface);
+      aspect-ratio: 16 / 11;
+    }
+    .gallery-item.tall {
+      grid-column: span 2;
+      aspect-ratio: 16 / 8.5;
+    }
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.65s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+    .gallery-caption {
+      position: absolute;
+      left: 16px;
+      bottom: 14px;
+      background: rgba(17, 17, 16, 0.78);
+      backdrop-filter: blur(8px);
+      padding: 5px 12px;
+      font-size: 10.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      border-left: 2px solid var(--accent);
+    }
+
+    /* Why Members Join / The 4 Pillars (Investor Dinner Club style) */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+    .pillar-col {
+      border-left: 1px solid var(--border-hairline);
+      padding-left: 22px;
+    }
+    .pillar-col h3 {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .pillar-col p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    /* Founding Partners & Real Estate Showcase (Clean Editorial Cards) */
+    .partners-section {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .partner-editorial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .partner-ed-card {
+      background: var(--bg-base);
+      border: 1px solid var(--border-subtle);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: var(--shadow-deep);
+      transition: border-color 0.25s ease, transform 0.25s ease;
     }
-    .wealth-wing.us-wing {
-      border-color: var(--border-gold);
+    .partner-ed-card:hover {
+      border-color: var(--border-hairline);
+      transform: translateY(-3px);
     }
-    .wealth-wing.dubai-wing {
-      border-color: rgba(56, 189, 248, 0.45);
+    .partner-ed-img {
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+      background: #0b0b0a;
     }
-    .wing-header {
+    .partner-ed-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .partner-ed-card:hover .partner-ed-img img {
+      transform: scale(1.04);
+    }
+    .partner-ed-logo-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(17, 17, 16, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 10px;
+      height: 36px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 14px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--border-subtle);
-      margin-bottom: 20px;
     }
-    .wing-logo {
-      height: 38px;
+    .partner-ed-logo-badge img {
+      max-height: 22px;
       width: auto;
       object-fit: contain;
     }
-
-    /* Interactive Tier Selector for Precision Developers */
-    .tier-selector {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      margin: 16px 0;
-    }
-    .tier-btn {
-      background: rgba(4, 8, 18, 0.8);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-sm);
-      padding: 10px 8px;
-      cursor: pointer;
-      text-align: center;
-      transition: all 0.2s;
-      color: var(--text-secondary);
-    }
-    .tier-btn.active,
-    .tier-btn:hover {
-      background: var(--gold-muted);
-      border-color: var(--gold);
-      color: var(--gold-light);
-    }
-    .tier-btn strong {
-      display: block;
-      font-family: var(--font-display);
-      font-size: 14px;
-      color: var(--text-main);
-    }
-    .tier-btn span {
-      font-family: var(--font-mono);
-      font-size: 10px;
-    }
-    .tier-readout {
-      background: #040812;
-      border: 1px solid var(--border-gold);
-      border-radius: var(--radius-md);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .tier-metrics {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px solid var(--border-subtle);
-    }
-    .tier-metrics div strong {
-      display: block;
-      font-family: var(--font-display);
-      font-size: 20px;
-      color: var(--gold-light);
-    }
-    .tier-metrics div span {
-      font-size: 11px;
-      color: var(--text-muted);
-    }
-
-    /* Project Cards inside US & Dubai Wings */
-    .mini-projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-bottom: 22px;
-    }
-    .mini-project {
-      background: rgba(4, 8, 18, 0.78);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      transition: border-color 0.2s, transform 0.2s;
-    }
-    .mini-project:hover {
-      border-color: var(--cyan);
-      transform: translateY(-2px);
-    }
-    .mini-project img {
-      width: 100%;
-      height: 118px;
-      object-fit: cover;
-    }
-    .mini-project-body {
-      padding: 11px 13px;
-    }
-    .mini-project-body .mp-tag {
-      font-family: var(--font-mono);
-      font-size: 9.5px;
-      color: var(--gold-light);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .mini-project-body h4 {
-      font-family: var(--font-display);
-      font-size: 14.5px;
-      color: var(--text-main);
-      margin: 2px 0;
-    }
-    .mini-project-body p {
-      font-size: 11.5px;
-      color: var(--text-muted);
-    }
-
-    /* Section 4: Kinara Corporate Catering & Private Buyout Cross-Sell */
-    .catering-showcase {
-      background: linear-gradient(135deg, #0d1a2f 0%, #060c18 100%);
-      border: 1.5px solid var(--border-gold);
-      border-radius: var(--radius-lg);
-      padding: 38px;
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 36px;
-      align-items: center;
-      box-shadow: var(--shadow-deep);
-    }
-    .catering-packages {
-      display: grid;
-      gap: 14px;
-      margin: 22px 0 26px;
-    }
-    .cat-pkg {
-      background: rgba(4, 8, 18, 0.72);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 16px 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 14px;
-    }
-    .cat-pkg h4 {
-      font-family: var(--font-display);
-      font-size: 16px;
-      color: var(--gold-light);
-      margin-bottom: 3px;
-    }
-    .cat-pkg p {
-      font-size: 12.5px;
-      color: var(--text-secondary);
-    }
-    .cat-pkg .cat-badge {
-      font-family: var(--font-mono);
-      font-size: 10.5px;
-      color: var(--cyan-bright);
-      background: var(--cyan-glow);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      padding: 5px 10px;
-      border-radius: 6px;
-      white-space: nowrap;
-    }
-    .catering-mosaic {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .catering-mosaic img {
-      width: 100%;
-      height: 175px;
-      object-fit: cover;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border-gold);
-    }
-    .catering-mosaic img.wide {
-      grid-column: span 2;
-      height: 200px;
-    }
-
-    /* Section 5: The BLUPRNT Round Table & Community Funnel */
-    .roundtable-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 36px;
-    }
-    .rt-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
+    .partner-ed-body {
       padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      transition: transform 0.25s ease, border-color 0.25s ease;
+      flex: 1;
     }
-    .rt-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--gold);
-    }
-    .rt-card.featured {
-      background: linear-gradient(160deg, #132442 0%, #091326 100%);
-      border: 1.5px solid var(--gold);
-      box-shadow: 0 20px 55px rgba(212, 175, 55, 0.18);
-      padding-top: 38px;
-    }
-    .rt-badge {
-      position: absolute;
-      top: 12px;
-      right: 16px;
-      background: var(--gold);
-      color: #040812;
-      font-family: var(--font-mono);
+    .partner-ed-eyebrow {
       font-size: 10px;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 999px;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
-    }
-    .rt-step {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--cyan-bright);
-      margin-bottom: 6px;
-    }
-    .rt-card h3 {
-      font-family: var(--font-display);
-      font-size: 23px;
-      margin-bottom: 10px;
-    }
-    .rt-price {
-      font-family: var(--font-display);
-      font-size: 34px;
-      font-weight: 700;
-      color: var(--gold-light);
-      line-height: 1.05;
-      margin-bottom: 14px;
-    }
-    .rt-price span {
+      color: var(--accent);
+      margin-bottom: 8px;
       display: block;
-      font-family: var(--font-sans);
-      font-size: 12.5px;
-      font-weight: 400;
-      color: var(--text-muted);
-      margin-top: 4px;
     }
-    .rt-list {
+    .partner-ed-body h3 {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .partner-ed-body p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      font-weight: 300;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    .partner-highlights {
       list-style: none;
       border-top: 1px solid var(--border-subtle);
       padding-top: 14px;
-      margin-bottom: 24px;
-    }
-    .rt-list li {
       font-size: 13px;
       color: var(--text-secondary);
-      margin-bottom: 10px;
-      position: relative;
-      padding-left: 20px;
-      line-height: 1.5;
     }
-    .rt-list li strong {
-      color: var(--text-main);
-    }
-    .rt-list li::before {
-      content: "✦";
-      color: var(--gold);
-      font-weight: 700;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    /* Multi-City Chapter Circuit Banner (SF -> Dublin Pavillion -> Naples -> Dubai) */
-    .circuit-strip {
-      margin-top: 42px;
-      background: linear-gradient(135deg, #0b162c 0%, #070e1c 100%);
-      border: 1px solid var(--border-grid);
-      border-radius: var(--radius-lg);
-      padding: 30px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-    .circuit-node {
-      background: rgba(4, 8, 18, 0.72);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 18px;
-    }
-    .circuit-node.active-chapter {
-      border-color: var(--gold);
-      background: rgba(212, 175, 55, 0.08);
-    }
-    .circuit-node .c-code {
-      font-family: var(--font-mono);
-      font-size: 10.5px;
-      color: var(--gold-light);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-    .circuit-node h4 {
-      font-family: var(--font-display);
-      font-size: 17px;
-      margin: 5px 0 4px;
-      color: var(--text-main);
-    }
-    .circuit-node p {
-      font-size: 12px;
-      color: var(--text-secondary);
-    }
-
-    /* Native Modal Dialog & Modern Form Validation (:user-invalid / :user-valid) */
-    dialog {
-      margin: auto;
-      background: var(--bg-card);
-      color: var(--text-main);
-      border: 1.5px solid var(--gold);
-      border-radius: var(--radius-lg);
-      padding: 0;
-      max-width: 600px;
-      width: calc(100% - 32px);
-      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.9);
-    }
-    dialog::backdrop {
-      background-color: rgba(2, 5, 12, 0.84);
-      backdrop-filter: blur(6px);
-    }
-    .dialog-inner {
-      padding: 30px;
-      max-height: 90vh;
-      overflow-y: auto;
-    }
-    .dialog-header {
+    .partner-highlights li {
+      padding: 6px 0;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     }
-    .dialog-close {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-secondary);
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
+    .partner-highlights li strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+    .partner-ed-footer {
+      padding: 18px 26px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: 10.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .partner-ed-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* FAQ Accordion (Founder Dinners style) */
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 4.5fr 7.5fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .faq-list {
+      border-top: 1px solid var(--border-subtle);
+    }
+    details.faq-item {
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 22px 0;
+    }
+    details.faq-item summary {
+      list-style: none;
       cursor: pointer;
-      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    details.faq-item summary .plus {
+      font-family: var(--font-sans);
+      font-size: 18px;
+      color: var(--accent);
+      transition: transform 0.2s ease;
+    }
+    details.faq-item[open] summary .plus {
+      transform: rotate(45deg);
+    }
+    details.faq-item p {
+      margin-top: 12px;
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      font-weight: 300;
+      line-height: 1.75;
+    }
+
+    /* Bottom Invitation Registry Section ("The Table is Being Set") */
+    .registry-section {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: 112px 0;
+    }
+    .registry-card {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--bg-base);
+      border: 1px solid var(--border-hairline);
+      padding: 52px;
     }
     .form-grid {
       display: grid;
-      gap: 13px;
+      gap: 18px;
+      margin-top: 32px;
     }
-    .form-row-2 {
+    .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 18px;
     }
-    .form-grid label {
-      font-size: 12px;
+    .field label {
+      display: block;
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
       color: var(--text-secondary);
-      font-weight: 600;
-      display: block;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
     }
-    .form-grid input,
-    .form-grid select,
-    .form-grid textarea {
+    .field input,
+    .field select,
+    .field textarea {
       width: 100%;
-      padding: 11px 14px;
-      border-radius: var(--radius-sm);
-      background: #040812;
+      background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      color: var(--text-main);
-      font-family: inherit;
-      font-size: 13.5px;
-      transition: border-color 0.2s, background-color 0.2s;
+      padding: 15px 16px;
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
     }
-    .error-msg {
-      display: none;
-      color: #fca5a5;
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--accent);
+    }
+    .field input:user-invalid,
+    .field select:user-invalid {
+      border-color: #ef4444;
+    }
+    .field input:required:user-valid {
+      border-color: rgba(229, 190, 115, 0.55);
+    }
+    .btn-submit {
+      width: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-deep));
+      color: #111110;
+      border: none;
+      padding: 18px 28px;
       font-size: 11.5px;
-      margin-top: 4px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      margin-top: 6px;
     }
-    .form-grid input:user-invalid,
-    .form-grid select:user-invalid,
-    .form-grid input.user-invalid-fallback,
-    .form-grid select.user-invalid-fallback {
-      border-color: var(--crimson);
-      background-color: rgba(239, 68, 68, 0.08);
+    .btn-submit:hover {
+      opacity: 0.92;
     }
-    .form-grid input:user-invalid + .error-msg,
-    .form-grid select:user-invalid + .error-msg,
-    .form-grid input.user-invalid-fallback + .error-msg,
-    .form-grid select.user-invalid-fallback + .error-msg {
-      display: block;
-    }
-    .form-grid input:required:user-valid,
-    .form-grid select:required:user-valid {
-      border-color: var(--emerald);
-    }
-    .toast-confirm {
+    .confirm-box {
       display: none;
-      margin-top: 14px;
-      padding: 14px 16px;
-      border-radius: var(--radius-sm);
-      background: var(--emerald-muted);
-      border: 1px solid var(--emerald);
-      color: #6ee7b7;
-      font-size: 13px;
+      margin-top: 20px;
+      padding: 18px 20px;
+      background: rgba(229, 190, 115, 0.1);
+      border: 1px solid var(--accent);
+      color: var(--text-primary);
+      font-size: 13.5px;
     }
 
+    /* Footer */
     footer {
-      background: #02050b;
-      border-top: 1px solid var(--border-grid);
-      padding: 56px 0 36px;
-      font-size: 13px;
+      background: #0c0c0b;
+      border-top: 1px solid var(--border-subtle);
+      padding: 44px 0;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
       color: var(--text-muted);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .footer-links a:hover {
+      color: var(--accent);
     }
 
     @media (max-width: 1024px) {
-      .hero-grid,
-      .offer-banner,
-      .wealth-wing-grid,
-      .catering-showcase {
-        grid-template-columns: 1fr;
-      }
-      .courses-grid,
-      .roundtable-grid,
-      .partner-grid,
-      .circuit-strip {
+      .proof-grid,
+      .pillars-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+      .steps-grid,
+      .partner-editorial-grid,
+      .dinner-layout,
+      .faq-layout {
+        grid-template-columns: 1fr;
       }
       .nav-links {
         display: none;
       }
     }
     @media (max-width: 640px) {
-      .courses-grid,
-      .roundtable-grid,
-      .partner-grid,
-      .circuit-strip,
-      .inaugural-callout,
-      .offer-rules,
-      .mini-projects-grid,
-      .stage-switcher,
-      .form-row-2 {
+      .proof-grid,
+      .pillars-grid,
+      .form-row,
+      .gallery-bento {
         grid-template-columns: 1fr;
       }
-      .navbar {
-        padding: 14px 18px;
+      .gallery-item.tall {
+        grid-column: span 1;
+      }
+      .hero-form {
+        flex-direction: column;
+      }
+      .registry-card {
+        padding: 32px 22px;
+      }
+      .nav-inner {
+        padding: 16px 20px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Scarcity Telemetry Ribbon -->
-  <div class="telemetry-bar">
-    <div class="telemetry-left">
-      <span class="pulse-dot"></span>
-      <span class="telemetry-tag">INAUGURAL CHAPTER // SF-01</span>
-      <span>607 GEARY ST, SAN FRANCISCO 94102 (KINARA FUSION KITCHEN) &bull; 12–15 VETTED OWNERS (&gt;$5M REV) &bull; ALL-EXPENSE-PAID 3-COURSE DINNER</span>
-    </div>
-    <div class="telemetry-right">
-      <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener">KinaraFusionKitchen.com &nearr;</a>
-      <a href="https://precisiondevelopers.com" target="_blank" rel="noopener">PrecisionDevelopers.com &nearr;</a>
-      <a href="https://precisionrealty.ae" target="_blank" rel="noopener">PrecisionRealty.ae &nearr;</a>
-      <a href="https://the-pavillion-dublin.vercel.app" target="_blank" rel="noopener">The Pavillion Sanctuary &rarr;</a>
-    </div>
-  </div>
-
-  <!-- Sticky Navigation -->
+  <!-- Minimal Fixed Navigation -->
   <header class="navbar">
-    <a href="#top" class="brand">
-      <div class="brand-mark">BP//</div>
-      <div>
-        <span class="brand-title">BLUPRNT</span>
-        <span class="brand-sub">Founder &amp; Owner Dealmaking Series</span>
-      </div>
-    </a>
-    <nav class="nav-links" aria-label="BLUPRNT Primary Navigation">
-      <a href="#dinner">SF Inaugural Dinner</a>
-      <a href="#tasting">3-Course Free Tasting</a>
-      <a href="#investments">US &amp; Dubai Real Estate</a>
-      <a href="#catering">Kinara Catering</a>
-      <a href="#roundtable">The Round Table</a>
-    </nav>
-    <div class="nav-actions">
-      <button type="button" class="btn btn-outline" onclick="openBluprntModal('Request US & Dubai Real Estate Deal Deck', '>$10M–$25M Annual Revenue')">Deal Room</button>
-      <button type="button" class="btn btn-gold" onclick="openBluprntModal('Request Invitation — SF Inaugural Dinner (607 Geary St) & Round Table', '>$5M–$10M Annual Revenue')">Request Seat at Round Table</button>
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-name">BLUPRNT</span>
+        <span class="brand-tag">The Round Table</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#process">How It Works</a>
+        <a href="#dinner">Nov 22 SF Dinner</a>
+        <a href="#why">Why Owners Join</a>
+        <a href="#partners">Real Estate &amp; Hospitality</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#register" class="btn-nav">Request Invitation</a>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO SECTION -->
+    <!-- Hero Section (Inspired by Investor Dinner Club & Founder Dinners) -->
     <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <div class="hero-badges">
-              <span class="badge badge-gold">INAUGURAL DINNER // 607 GEARY ST, SAN FRANCISCO</span>
-              <span class="badge badge-cyan">INVITATION-ONLY &bull; &gt;$5M REVENUE OWNERS</span>
-              <span class="badge badge-emerald">12–15 SEATS &bull; ALL-EXPENSE-PAID 3-COURSE (FREE)</span>
-            </div>
+      <div class="hero-bg">
+        <img
+          src="https://static.spotapps.co/spots/72/77d1bbb48840cf87a488fca243ab98/full"
+          alt="BLUPRNT private dining table at Kinara Fusion Kitchen, 607 Geary St, San Francisco"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="hero-glow"></div>
 
-            <h1>Where <em>$5M+ Owners</em> Break Bread &amp; Architect Generational Wealth.</h1>
+      <div class="hero-content">
+        <span class="eyebrow">Private Founder &amp; Owner Dealmaking Series</span>
+        <h1>
+          Fifteen Owners.<br />
+          One Table.<br />
+          <em>Where Capital Meets Conviction.</em>
+        </h1>
+        <p class="hero-sub">
+          Intimate, invitation-only dinners connecting business owners generating <strong>$5M+ in annual revenue</strong>. Join our inaugural San Francisco table on <strong>November 22nd at 6:00 PM</strong> at <strong>Kinara Fusion Kitchen (607 Geary St)</strong> for an all-expense-paid 3-course dinner, vetted US &amp; Dubai real estate deal flow, and induction into <strong>The BLUPRNT Round Table</strong>.
+        </p>
 
-            <p class="hero-lead">
-              <strong>BLUPRNT — Founder &amp; Owner Dealmaking Series</strong> convenes <strong>12 to 15 hand-vetted business owners generating $5M+ in annual revenue</strong> around one private table. Our inaugural San Francisco chapter is hosted at <strong>Kinara Fusion Kitchen (607 Geary St, SF 94102)</strong> featuring an <strong>all-expense-paid 3-course Chef's Tasting Dinner</strong>, institutional <strong>US &amp; Dubai real estate deal flow</strong>, and induction into <strong>The BLUPRNT Round Table Community</strong>.
-            </p>
+        <form class="hero-form" onsubmit="prefillAndScroll(event)">
+          <input
+            type="email"
+            id="heroEmail"
+            placeholder="Enter your executive email"
+            required
+            aria-label="Enter your executive email"
+          />
+          <button type="submit">Request Invitation &rarr;</button>
+        </form>
 
-            <!-- Inaugural SF Dinner Dossier Callout -->
-            <div class="inaugural-callout">
-              <div class="inaugural-item">
-                <span class="lbl">First Dinner Venue</span>
-                <div class="val">Kinara Fusion Kitchen</div>
-                <div class="sub">607 Geary St, San Francisco 94102</div>
-              </div>
-              <div class="inaugural-item">
-                <span class="lbl">Guest Qualification</span>
-                <div class="val">12–15 Vetted Owners</div>
-                <div class="sub">&gt;$5M+ Annual Revenue &bull; Invite-Only</div>
-              </div>
-              <div class="inaugural-item">
-                <span class="lbl">Private Dining Offer</span>
-                <div class="val">100% Complimentary</div>
-                <div class="sub">All-Expense-Paid 3-Course Tasting</div>
-              </div>
-            </div>
-
-            <div class="hero-cta-row">
-              <button type="button" class="btn btn-gold" onclick="openBluprntModal('Request Seat: SF Inaugural Dinner (607 Geary St) + Round Table', '>$5M–$10M Annual Revenue')">
-                Request Your Seat at the Round Table (Free &bull; Vetted)
-              </button>
-              <a href="#investments" class="btn btn-cyan">Explore US &amp; Dubai Deal Flow</a>
-              <a href="#catering" class="btn btn-outline">Kinara VIP Catering</a>
-            </div>
-
-            <div class="formula-box">
-              <div class="formula-title">The BLUPRNT 3-Pillar Dealmaking Flywheel</div>
-              <div class="formula-steps">
-                <span>01. 12–15 Owners (&gt;$5M Rev) at 607 Geary St</span>
-                <span class="arrow">&rarr;</span>
-                <span>02. Free 3-Course Kinara Tasting</span>
-                <span class="arrow">&rarr;</span>
-                <span>03. US &amp; Dubai Real Estate</span>
-                <span class="arrow">&rarr;</span>
-                <span>04. 'The Round Table' Community</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Interactive 4-Tab Visual Showcase Using Real Site Visuals -->
-          <div class="stage-card">
-            <div class="stage-card-top">
-              <div>
-                <div style="font-family:var(--font-display);font-size:17.5px;font-weight:700;color:var(--text-main);" id="stTitle">Kinara Private Dining Table // 607 Geary St, SF</div>
-                <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-muted);" id="stSub">LOWER NOB HILL, SAN FRANCISCO &bull; 12–15 VETTED OWNERS</div>
-              </div>
-              <span class="telemetry-tag" id="stBadge">SF CHAPTER 01</span>
-            </div>
-
-            <div class="stage-switcher" role="tablist" aria-label="BLUPRNT Ecosystem Visual Switcher">
-              <button type="button" class="stage-tab active" id="stBtn1" onclick="setStageView(1)">01 // 607 Geary Table</button>
-              <button type="button" class="stage-tab" id="stBtn2" onclick="setStageView(2)">02 // 3-Course Tasting</button>
-              <button type="button" class="stage-tab" id="stBtn3" onclick="setStageView(3)">03 // US Development</button>
-              <button type="button" class="stage-tab" id="stBtn4" onclick="setStageView(4)">04 // Dubai Off-Plan</button>
-            </div>
-
-            <div class="stage-frame">
-              <img
-                id="stImg"
-                src="https://static.spotapps.co/spots/72/77d1bbb48840cf87a488fca243ab98/full"
-                alt="Private table set for 12 to 15 vetted business owners at Kinara Fusion Kitchen, 607 Geary St, San Francisco"
-                fetchpriority="high"
-              />
-              <div class="stage-overlay"></div>
-              <span class="stage-chip" id="stChip">KINARA FUSION KITCHEN &bull; 607 GEARY ST, SF 94102</span>
-              <div class="stage-caption">
-                <div style="font-family:var(--font-mono);font-size:10.5px;color:var(--gold-light);text-transform:uppercase;letter-spacing:0.15em;" id="stCapTop">Inaugural San Francisco Host Venue</div>
-                <div style="font-size:13px;color:var(--text-main);font-weight:500;" id="stCapBody">Intimate chandelier-lit private table at 607 Geary St reserved exclusively for 12–15 founders &amp; owners with &gt;$5M annual revenue</div>
-              </div>
-            </div>
-
-            <div class="stage-kpis">
-              <div class="stage-kpi">
-                <strong>12–15</strong>
-                <span>Curated Owners / Table</span>
-              </div>
-              <div class="stage-kpi">
-                <strong>&gt;$5M+</strong>
-                <span>Minimum Annual Revenue</span>
-              </div>
-              <div class="stage-kpi">
-                <strong>15%–20%</strong>
-                <span>Guaranteed First Return Floor</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p class="hero-note">
+          November 22 &bull; 6:00 PM &bull; 607 Geary St, San Francisco &bull; 15–20 Seats Max
+        </p>
       </div>
     </section>
 
-    <!-- FOUNDING ECOSYSTEM PARTNER BAR (With Official Logos & Links) -->
-    <div class="partner-strip">
+    <!-- 4-Column Proof Strip -->
+    <div class="proof-strip">
       <div class="container">
-        <div class="partner-grid">
-          <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener" class="partner-card">
-            <div class="partner-logo-wrap">
-              <img src="https://static.spotapps.co/website_images/ab_websites/443030_website_v1/logo_v4.png" alt="Kinara Fusion Kitchen Logo" />
-            </div>
-            <div class="partner-info">
-              <div class="p-role">Inaugural Venue &amp; Catering</div>
-              <div class="p-name">Kinara Fusion Kitchen</div>
-              <div class="p-url">607 Geary St, SF &bull; KinaraFusionKitchen.com &nearr;</div>
-            </div>
-          </a>
-
-          <a href="https://precisiondevelopers.com" target="_blank" rel="noopener" class="partner-card">
-            <div class="partner-logo-wrap">
-              <img src="https://precisiondevelopers.com/core/wp-content/uploads/2025/05/logo-white-Desktop-2.png" alt="Precision Developers Logo" />
-            </div>
-            <div class="partner-info">
-              <div class="p-role">US &amp; Global Ground-Up Development</div>
-              <div class="p-name">Precision Developers</div>
-              <div class="p-url">SF &bull; FL &bull; TX &bull; PrecisionDevelopers.com &nearr;</div>
-            </div>
-          </a>
-
-          <a href="https://precisionrealty.ae" target="_blank" rel="noopener" class="partner-card">
-            <div class="partner-logo-wrap">
-              <img src="https://precisionrealty.ae/wp-content/uploads/2025/12/2-sm.png" alt="Precision Realty Dubai Logo" />
-            </div>
-            <div class="partner-info">
-              <div class="p-role">UAE Tax-Free Luxury Brokerage</div>
-              <div class="p-name">Precision Realty Dubai</div>
-              <div class="p-url">DLD ORN: 50532 &bull; PrecisionRealty.ae &nearr;</div>
-            </div>
-          </a>
-
-          <a href="#roundtable" class="partner-card">
-            <div class="partner-logo-wrap" style="font-family:var(--font-mono);font-weight:700;color:var(--gold-light);font-size:13px;">
-              RT//01
-            </div>
-            <div class="partner-info">
-              <div class="p-role">The Private Owner Syndicate</div>
-              <div class="p-name">The BLUPRNT Round Table</div>
-              <div class="p-url">Vetted &gt;$5M Founder &amp; Investor Community &rarr;</div>
-            </div>
-          </a>
+        <div class="proof-grid">
+          <div class="proof-item">
+            <h3>Nov 22 &bull; 6:00 PM</h3>
+            <p>Inaugural San Francisco Dinner</p>
+          </div>
+          <div class="proof-item">
+            <h3>15–20 Seats Max</h3>
+            <p>Vetted &gt;$5M revenue owners only</p>
+          </div>
+          <div class="proof-item">
+            <h3>607 Geary St, SF</h3>
+            <p>Hosted at Kinara Fusion Kitchen</p>
+          </div>
+          <div class="proof-item">
+            <h3>Complimentary</h3>
+            <p>All-expense-paid 3-course tasting</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- SECTION 2: THE PRIVATE DINING OFFER & 3-COURSE TASTING MENU AT KINARA (607 GEARY ST, SF) -->
+    <!-- 01 / 02 / 03 Process Section -->
+    <section id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">The Process</span>
+          <h2 class="section-title">From invitation to a <em>seat at the table.</em></h2>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-num">01</span>
+            <div class="step-inner">
+              <h3>Receive Invitation</h3>
+              <p>
+                Access to BLUPRNT is strictly by nomination or curated application for business owners and founders generating over $5M in annual revenue, ensuring the highest caliber room in San Francisco.
+              </p>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">02</span>
+            <div class="step-inner">
+              <h3>Sit Down to Dinner</h3>
+              <p>
+                On <strong>November 22nd at 6:00 PM</strong>, join 15–20 peers at <strong>Kinara Fusion Kitchen (607 Geary St, SF)</strong>. Your 3-course chef's tasting menu is completely complimentary—no stages, no badges, and no obligation.
+              </p>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">03</span>
+            <div class="step-inner">
+              <h3>Join The Round Table</h3>
+              <p>
+                Every dinner guest is inducted into <strong>The BLUPRNT Round Table</strong>—our private community and co-investment network for US ground-up development and tax-free Dubai real estate.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Quote Banner -->
+    <div class="quote-banner">
+      <blockquote>
+        &ldquo;The best conversations about your business—and where to deploy your capital—happen at a <em>dinner table</em>, not a conference.&rdquo;
+      </blockquote>
+    </div>
+
+    <!-- Inaugural Dinner Dossier & From The Table Gallery -->
     <section id="dinner">
       <div class="container">
-        <div class="offer-banner">
+        <div class="dinner-layout">
           <div>
-            <span class="offer-seal">&#10022; Private Dining Covenant &bull; 100% Complimentary for Vetted Guests</span>
-            <h2 class="section-title" style="font-size:clamp(28px, 3.4vw, 42px);">
-              An All-Expense-Paid 3-Course Chef's Tasting at <em>607 Geary St, San Francisco</em>.
+            <span class="eyebrow">Inaugural Chapter // San Francisco</span>
+            <h2 class="section-title" style="margin-bottom:18px;">
+              Kinara Fusion Kitchen.<br />
+              <em>November 22nd at 6:00 PM.</em>
             </h2>
-            <p style="font-size:15.5px;color:var(--text-secondary);margin-bottom:16px;">
-              Founders and business owners operating above <strong>$5M in annual revenue</strong> don't need another crowded networking mixer or ticketed conference. For our inaugural San Francisco chapter at <strong>Kinara Fusion Kitchen (607 Geary St, SF 94102)</strong>, every accepted guest's 3-course tasting dinner and zero-proof craft pairings are <strong>100% underwritten by our Founding Partners</strong>.
+            <p style="font-size:15px;color:var(--text-secondary);font-weight:300;margin-bottom:16px;">
+              Set under the chandeliers of <strong>Kinara Fusion Kitchen (607 Geary St, San Francisco 94102)</strong>, our first evening brings together 15 to 20 vetted founders and business owners for an intimate, all-expense-paid 3-course culinary experience.
+            </p>
+            <p style="font-size:15px;color:var(--text-secondary);font-weight:300;">
+              The bespoke 3-course tasting menu is being curated directly with <strong>Shahil</strong> and the Kinara culinary team, blending refined South Asian heritage with modern California-American craft and zero-proof botanical pairings.
             </p>
 
-            <div class="offer-rules">
-              <div class="offer-rule">
-                <strong>Strictly 12–15 Vetted Owners</strong>
-                <span>One private table. Every seat is held by a verified founder, business owner (&gt;$5M revenue), or family office principal.</span>
+            <div class="dossier-table">
+              <div class="dossier-row">
+                <span class="d-lbl">Date &amp; Time</span>
+                <span class="d-val">November 22, 2026 &bull; 6:00 PM</span>
               </div>
-              <div class="offer-rule">
-                <strong>All-Expense-Paid ($0 Ticket)</strong>
-                <span>Full 3-course Chef's Tasting Menu, artisanal zero-proof mocktails, and cardamom chai service—completely free.</span>
+              <div class="dossier-row">
+                <span class="d-lbl">Host Venue</span>
+                <span class="d-val">Kinara Fusion Kitchen &bull; 607 Geary St, SF 94102</span>
               </div>
-              <div class="offer-rule">
-                <strong>Chatham House Peer Dialogue</strong>
-                <span>Candid round-table exchange on tax mitigation, ground-up real estate yield, Dubai diversification, and scaling operations.</span>
+              <div class="dossier-row">
+                <span class="d-lbl">Table Capacity</span>
+                <span class="d-val">15–20 Seats Max (TBD &bull; By Invitation)</span>
               </div>
-              <div class="offer-rule">
-                <strong>Direct Round Table Induction</strong>
-                <span>Every dinner attendee receives charter access into the permanent <strong>BLUPRNT Round Table</strong> deal-flow syndicate.</span>
+              <div class="dossier-row">
+                <span class="d-lbl">Guest Profile</span>
+                <span class="d-val">Business Owners &amp; Founders (&gt;$5M Revenue)</span>
+              </div>
+              <div class="dossier-row">
+                <span class="d-lbl">Culinary Format</span>
+                <span class="d-val">All-Expense-Paid 3-Course Tasting (Menu TBD w/ Shahil)</span>
+              </div>
+              <div class="dossier-row">
+                <span class="d-lbl">Reservations Desk</span>
+                <span class="d-val">reservations@bluprntseries.com</span>
               </div>
             </div>
 
-            <div style="display:flex;flex-wrap:wrap;gap:12px;">
-              <button type="button" class="btn btn-gold" onclick="openBluprntModal('Claim Complimentary 3-Course Tasting Seat (607 Geary St, SF)', '>$5M–$10M Annual Revenue')">
-                Verify &gt;$5M Profile &amp; Claim Your Seat
-              </button>
-              <a href="https://maps.google.com/?q=607+Geary+St+San+Francisco+CA+94102" target="_blank" rel="noopener" class="btn btn-outline">
-                607 Geary St, SF 94102 &bull; View Map &nearr;
+            <div style="display:flex;gap:14px;flex-wrap:wrap;">
+              <a href="#register" class="btn-nav" style="padding:15px 28px;">Request Your Seat</a>
+              <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener" style="padding:14px 22px;border:1px solid var(--border-subtle);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-secondary);">
+                Visit KinaraFusionKitchen.com &nearr;
               </a>
             </div>
           </div>
 
-          <!-- Real Kinara Video & Chandelier Interior Gallery -->
-          <div class="venue-media-box">
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              poster="https://static.spotapps.co/website_images/ab_websites/443030_website_v1/video_poster_v1.jpg"
-            >
-              <source src="https://static.spotapps.co/website_videos/Kinara%20Fusion%20Kitchen_Edited_Video_3_Vimeo720p30.mp4" type="video/mp4" />
-            </video>
-            <div class="venue-Gallery-strip">
-              <img src="https://static.spotapps.co/spots/6c/789c10d677439c9a36afe3aef7b00c/full" alt="Kinara Fusion Kitchen chandelier and interior dining ambiance at 607 Geary St San Francisco" loading="lazy" />
-              <img src="https://static.spotapps.co/spots/72/77d1bbb48840cf87a488fca243ab98/full" alt="Private table set for guests at Kinara Fusion Kitchen" loading="lazy" />
-              <img src="https://static.spotapps.co/spots/fb/900f4c66a2445ba20d752b1b98a954/full" alt="Warm architectural lighting and decor inside Kinara Fusion Kitchen" loading="lazy" />
+          <div class="gallery-bento">
+            <div class="gallery-item tall">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                poster="https://static.spotapps.co/website_images/ab_websites/443030_website_v1/video_poster_v1.jpg"
+              >
+                <source src="https://static.spotapps.co/website_videos/Kinara%20Fusion%20Kitchen_Edited_Video_3_Vimeo720p30.mp4" type="video/mp4" />
+              </video>
+              <span class="gallery-caption">Kinara Fusion Kitchen &bull; 607 Geary St, San Francisco</span>
             </div>
-          </div>
-        </div>
-
-        <!-- THE 3-COURSE COMPLIMENTARY TASTING MENU -->
-        <div id="tasting" style="scroll-margin-top:90px;">
-          <div class="menu-header-bar">
-            <div>
-              <span class="eyebrow">100% Halal &bull; Refined South Asian &times; American Fusion &bull; Zero-Proof Craft Bar</span>
-              <h3 class="section-title" style="font-size:clamp(26px, 3.2vw, 38px);margin-bottom:4px;">
-                The Inaugural <em>3-Course Chef's Tasting</em> Menu
-              </h3>
-              <p style="font-size:14.5px;color:var(--text-secondary);">
-                Curated exclusively by <strong>Kinara Fusion Kitchen (www.KinaraFusionKitchen.com)</strong> for the 12–15 guests of <strong>BLUPRNT // SF-01</strong>.
-              </p>
+            <div class="gallery-item">
+              <img src="https://static.spotapps.co/spots/6c/789c10d677439c9a36afe3aef7b00c/full" alt="Kinara Fusion Kitchen chandelier interior" loading="lazy" />
+              <span class="gallery-caption">The Private Dining Room</span>
             </div>
-            <a href="https://kinarafusion.com/san-francisco-kinara-fusion-kitchen-food-menu" target="_blank" rel="noopener" class="btn btn-outline">
-              View Full Kinara Culinary Menu &nearr;
-            </a>
-          </div>
-
-          <div class="courses-grid">
-            <!-- Course I -->
-            <article class="course-card">
-              <div>
-                <div class="course-img-pair">
-                  <img src="https://static.spotapps.co/spots/c5/7af49214924f83a7a61ea448ae7e76/full" alt="Kinara Fusion Kitchen Artisanal Starters and Aloo Samosas" loading="lazy" />
-                  <img src="https://static.spotapps.co/spots/d9/3692c4cc9e490690984559f0c8d9b2/full" alt="Kinara Watermelon Falls Zero-Proof Craft Mocktail" loading="lazy" />
-                </div>
-                <div class="course-body">
-                  <span class="course-num">Course I &bull; 6:30 PM Arrival &amp; Vetted Introductions</span>
-                  <h3>Street-to-Table Prelude &amp; Zero-Proof Elixirs</h3>
-                  <ul class="dish-list">
-                    <li><strong>Pani Puri Shots &amp; Samosa Chaat</strong> — Crispy hollow shells filled with spiced mint-tamarind water, chickpea ragout &amp; yogurt drizzle.</li>
-                    <li><strong>Chicken 69 Bites &amp; Badmash Desi Wings</strong> — High-heat South Indian tempered crispy chicken bites and fire-glazed masala wings.</li>
-                    <li><strong>Crispy Chili Paneer &amp; Cauliflower Manchurian</strong> — Indo-Chinese wok-seared artisan cottage cheese &amp; florets.</li>
-                    <li><strong>Zero-Proof Craft Pairings:</strong> <em>Watermelon Falls</em>, <em>Dragon Swirl</em> &amp; <em>Mango Magic</em> botanical mocktails.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="course-footer">
-                <span>100% HALAL &bull; VEG &amp; NON-VEG</span>
-                <span>INCLUDED (COMPLIMENTARY)</span>
-              </div>
-            </article>
-
-            <!-- Course II -->
-            <article class="course-card">
-              <div>
-                <div class="course-img-pair">
-                  <img src="https://static.spotapps.co/spots/03/d2065b90de48ac99485f758409b9f6/full" alt="Kinara Signature Tikka Dum Biryani" loading="lazy" />
-                  <img src="https://static.spotapps.co/spots/31/13f7182cae42dc814d98aec4b14f30/full" alt="Kinara Paneer Tikka Masala and Signature Curries" loading="lazy" />
-                </div>
-                <div class="course-body">
-                  <span class="course-num">Course II &bull; 7:15 PM Main Round Table Seating</span>
-                  <h3>The Royal Fusion Feast &amp; Deal Dialogue</h3>
-                  <ul class="dish-list">
-                    <li><strong>Signature Tikka Dum Biryani</strong> — Slow-steamed aged basmati rice sealed over smoky charcoal chicken tikka, saffron &amp; caramelized onions.</li>
-                    <li><strong>Matka Goat Curry &amp; Karhai Chicken</strong> — Clay-pot slow-braised bone-in goat and wok-reduced heirloom tomato ginger chicken.</li>
-                    <li><strong>Braised Lamb Shank &amp; Paneer Tikka Masala</strong> — Velvet fenugreek masala reduction served with blistered garlic &amp; butter naan.</li>
-                    <li><strong>Chef's Fusion Table Share:</strong> <em>Tikka Dum Biryani Pizza</em> &amp; <em>Mango Dhamaka Flatbread</em> slices.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="course-footer">
-                <span>FAMILY-STYLE EXECUTIVE FEAST</span>
-                <span>INCLUDED (COMPLIMENTARY)</span>
-              </div>
-            </article>
-
-            <!-- Course III -->
-            <article class="course-card">
-              <div>
-                <div class="course-img-pair">
-                  <img src="https://static.spotapps.co/spots/98/54f252d3bd4625bcd928c471eefd81/full" alt="Kinara Fusion Culinary Presentation" loading="lazy" />
-                  <img src="https://static.spotapps.co/spots/14/cc8e7f809b4c1db170f6dd6aea68ef/full" alt="Kinara Artisanal Mango Lassi and Dessert Finale" loading="lazy" />
-                </div>
-                <div class="course-body">
-                  <span class="course-num">Course III &bull; 8:30 PM Deal Room &amp; Syndicate Briefing</span>
-                  <h3>Artisanal Finale &amp; Cardamom Chai Salon</h3>
-                  <ul class="dish-list">
-                    <li><strong>Signature Knafeh Rasmalai</strong> — Crispy golden kataifi pastry layered over saffron-pistachio rasmalai cream (Middle East &times; South Asia).</li>
-                    <li><strong>Royal Rose Falooda &amp; Paan Ice Cream</strong> — Vermicelli rose-milk parfait with sweet basil seeds &amp; refreshing betel-leaf gelato.</li>
-                    <li><strong>Warm Gajar Ka Halva</strong> — Slow-caramelized heirloom carrot pudding topped with toasted almonds &amp; silver leaf.</li>
-                    <li><strong>Digestif Service:</strong> Slow-steeped <em>Karak Cardamom Chai</em> &amp; <em>Artisanal Mango Lassi</em> during the US &amp; Dubai deal room briefing.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="course-footer">
-                <span>PRIVATE DEAL ROOM BRIEFING</span>
-                <span>INCLUDED (COMPLIMENTARY)</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: HIGH-HYPE REAL ESTATE DEAL FLOW (PrecisionDevelopers.com & PrecisionRealty.ae) -->
-    <section id="investments" style="background:rgba(7, 15, 30, 0.72);border-top:1px solid var(--border-grid);border-bottom:1px solid var(--border-grid);">
-      <div class="container">
-        <span class="eyebrow">Institutional Wealth Preservation &bull; US Ground-Up &times; Dubai Tax-Free Assets</span>
-        <h2 class="section-title">
-          From <em>Blueprint</em> to Reality: Exclusive Deal Flow for &gt;$5M Owners.
-        </h2>
-        <p class="section-desc">
-          Successful business owners know how to generate operating cash flow—the real challenge is deploying surplus profit into <strong>asymmetric, downside-protected hard assets</strong>. At the BLUPRNT Round Table, members gain direct principal-to-principal access to <strong>Precision Developers (US)</strong> and <strong>Precision Realty (Dubai)</strong>.
-        </p>
-
-        <div class="wealth-wing-grid">
-          <!-- LEFT WING: PRECISION DEVELOPERS (US GROUND-UP) -->
-          <div class="wealth-wing us-wing">
-            <div>
-              <div class="wing-header">
-                <div>
-                  <span style="font-family:var(--font-mono);font-size:10.5px;color:var(--gold-light);text-transform:uppercase;letter-spacing:0.14em;">US &amp; Global Ground-Up Development Arm</span>
-                  <h3 style="font-family:var(--font-display);font-size:24px;margin-top:2px;">Precision Developers</h3>
-                </div>
-                <img src="https://precisiondevelopers.com/core/wp-content/uploads/2025/05/logo-white-Desktop-2.png" alt="Precision Developers" class="wing-logo" />
-              </div>
-
-              <p style="font-size:14px;color:var(--text-secondary);margin-bottom:14px;">
-                Headquartered in <strong>San Francisco (150 Executive Park Blvd #4525)</strong> with offices in <strong>Dubai (Business Bay)</strong> and <strong>Pune</strong>, Precision Developers structures ground-up residential and commercial developments across <strong>Florida (Naples), Texas, and California (Elysian &amp; The Pavillion)</strong> with <strong>contractually guaranteed first-return protection</strong>.
-              </p>
-
-              <!-- Interactive Guaranteed Return Tier Selector -->
-              <div style="font-family:var(--font-mono);font-size:10.5px;color:var(--gold-light);text-transform:uppercase;letter-spacing:0.12em;">
-                Interactive Co-Investment Tier Explorer (Click to Inspect Return Floor):
-              </div>
-              <div class="tier-selector" role="tablist" aria-label="Precision Developers Investment Tiers">
-                <button type="button" class="tier-btn" id="tierBtn1" onclick="selectUsTier(1)">
-                  <strong>Tier 1 // $500K+</strong>
-                  <span>15% Guaranteed Floor</span>
-                </button>
-                <button type="button" class="tier-btn" id="tierBtn2" onclick="selectUsTier(2)">
-                  <strong>Tier 2 // $1M–$1.99M</strong>
-                  <span>20% Guaranteed Floor</span>
-                </button>
-                <button type="button" class="tier-btn active" id="tierBtn3" onclick="selectUsTier(3)">
-                  <strong>Tier 3 // $2M+ Lead</strong>
-                  <span>20% Floor + 25% Project</span>
-                </button>
-              </div>
-
-              <div class="tier-readout">
-                <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px;">
-                  <span style="font-family:var(--font-mono);font-size:11px;color:var(--gold-light);font-weight:700;" id="tierName">TIER 3 // CORNERSTONE LP ($2,000,000+ ALLOCATION)</span>
-                  <span class="badge badge-emerald" id="tierBadge">DOWNSIDE PROTECTED</span>
-                </div>
-                <p style="font-size:13.5px;color:var(--text-main);" id="tierDesc">
-                  Your <strong>first 20% return is guaranteed</strong> before developer profit participation, PLUS you are entitled to <strong>25% of total project returns</strong> across flagship ground-up developments.
-                </p>
-                <div class="tier-metrics">
-                  <div>
-                    <strong id="tierMin">$2,000,000+</strong>
-                    <span>Minimum Commitment</span>
-                  </div>
-                  <div>
-                    <strong id="tierFloor">First 20%</strong>
-                    <span>Guaranteed Return Floor</span>
-                  </div>
-                  <div>
-                    <strong id="tierUpside">25% Share</strong>
-                    <span>Total Project Returns</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Real Visuals from PrecisionDevelopers.com -->
-              <div class="mini-projects-grid">
-                <div class="mini-project">
-                  <img src="https://precisiondevelopers.com/core/wp-content/uploads/2020/03/slide01.jpg" alt="Project Elysian by Precision Developers" loading="lazy" />
-                  <div class="mini-project-body">
-                    <span class="mp-tag">Active Development &bull; Flagship</span>
-                    <h4>Project Elysian</h4>
-                    <p>Architectural excellence, luxury execution &amp; capital growth.</p>
-                  </div>
-                </div>
-                <div class="mini-project">
-                  <img src="https://precisiondevelopers.com/core/wp-content/uploads/2025/05/shutterstock_1673320966-scaled.jpg" alt="Naples Florida Exclusive Land and Residential Development by Precision Developers" loading="lazy" />
-                  <div class="mini-project-body">
-                    <span class="mp-tag">Coastal Florida &bull; 15%–20% Floor</span>
-                    <h4>Naples, FL Luxury Estates</h4>
-                    <p>Exclusive Southwest Florida coastal residential &amp; land parcels.</p>
-                  </div>
-                </div>
-                <div class="mini-project">
-                  <img src="./assets/pavillion-hero-hd.jpg" alt="The Pavillion 96,000 SF Dublin California Flagship" loading="lazy" />
-                  <div class="mini-project-body">
-                    <span class="mp-tag">Dublin, CA &bull; 96,000 SF Sanctuary</span>
-                    <h4>The Pavillion (California)</h4>
-                    <p>6400 Sierra Ct, Dublin &bull; Premier sports, dining &amp; founder destination.</p>
-                  </div>
-                </div>
-                <div class="mini-project">
-                  <img src="https://precisiondevelopers.com/core/wp-content/uploads/2025/05/shutterstock_1528927118-scaled.jpg" alt="Texas and US-UAE Cross-Border Development Corridors" loading="lazy" />
-                  <div class="mini-project-body">
-                    <span class="mp-tag">Texas &bull; US–UAE Cross-Border</span>
-                    <h4>Texas &amp; Global Corridors</h4>
-                    <p>36M+ AED track record across high-velocity growth markets.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style="display:flex;flex-wrap:wrap;gap:10px;">
-              <button type="button" class="btn btn-gold" style="flex:1;" onclick="openBluprntModal('Request Precision Developers US Co-Investment Allocation ($500K–$2M+)', '>$10M–$25M Annual Revenue')">
-                Unlock US Ground-Up Deal Room
-              </button>
-              <a href="https://precisiondevelopers.com/investment-tiers/" target="_blank" rel="noopener" class="btn btn-outline">
-                PrecisionDevelopers.com &nearr;
-              </a>
-            </div>
-          </div>
-
-          <!-- RIGHT WING: PRECISION REALTY DUBAI (PrecisionRealty.ae) -->
-          <div class="wealth-wing dubai-wing">
-            <div>
-              <div class="wing-header">
-                <div>
-                  <span style="font-family:var(--font-mono);font-size:10.5px;color:var(--cyan-bright);text-transform:uppercase;letter-spacing:0.14em;">Dubai Land Dept Registered &bull; ORN: 50532</span>
-                  <h3 style="font-family:var(--font-display);font-size:24px;margin-top:2px;">Precision Realty Dubai</h3>
-                </div>
-                <img src="https://precisionrealty.ae/wp-content/uploads/2025/12/2-sm.png" alt="Precision Realty Dubai" class="wing-logo" />
-              </div>
-
-              <p style="font-size:14px;color:var(--text-secondary);margin-bottom:14px;">
-                <em>"Invest Smarter. Live Better. Choose Precision."</em> Operating from <strong>Al Manara Tower, Business Bay, Dubai</strong>, Precision Real Estate L.L.C (DLD ORN 50532) connects US founders with <strong>0% income/capital gains tax off-plan and waterfront luxury residences</strong> across Dubai and Abu Dhabi.
-              </p>
-
-              <!-- UAE Tax-Free & Golden Visa Highlights -->
-              <div class="tier-readout" style="border-color:rgba(56, 189, 248, 0.45);">
-                <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px;">
-                  <span style="font-family:var(--font-mono);font-size:11px;color:var(--cyan-bright);font-weight:700;">UAE SOVEREIGN WEALTH ADVANTAGE FOR US FOUNDERS</span>
-                  <span class="badge badge-cyan">0% TAX JURISDICTION</span>
-                </div>
-                <p style="font-size:13.5px;color:var(--text-main);">
-                  USD-pegged currency stability (<strong>3.67 AED = $1 USD</strong>), developer milestone payment plans, high rental velocity, and <strong>10-Year UAE Golden Visa</strong> residency for qualifying real estate allocations.
-                </p>
-                <div class="tier-metrics">
-                  <div>
-                    <strong style="color:var(--cyan-bright);">0% Tax</strong>
-                    <span>Income &amp; Capital Gains</span>
-                  </div>
-                  <div>
-                    <strong style="color:var(--cyan-bright);">8%–12%</strong>
-                    <span>Target Rental Yields</span>
-                  </div>
-                  <div>
-                    <strong style="color:var(--cyan-bright);">ORN 50532</strong>
-                    <span>DLD Licensed Brokerage</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Real Featured Listings from PrecisionRealty.ae -->
-              <div class="mini-projects-grid">
-                <div class="mini-project">
-                  <img src="https://precisionrealty.ae/wp-content/uploads/2026/06/51f76586f5d146e7914b3acdb4745fbe-584x438.webp" alt="Hudayriyat Golf Estates Abu Dhabi by Precision Realty" loading="lazy" />
-                  <div class="mini-project-body">
-                    <span class="mp-tag">From AED 4,250,000 (~$1.16M)</span>
-                    <h4>Hudayriyat Golf Estates</h4>
-                    <p>Abu Dhabi &bull; 3 to 6 Bed Golf Villas &amp; Townhouses (up to 13,378 SF).</p>
-                  </div>
-                </div>
-                <div class="mini-project">
-                  <img src="https://precisionrealty.ae/wp-content/uploads/2026/06/0e84f3f7dd5e4de1935e9faaa870e415-584x438.webp" alt="Binghatti Wraith Al Jaddaf Dubai by Precision Realty" loading="lazy" />
-                  <div class="mini-project-body">
-                    <span class="mp-tag">From AED 700,000 (~$191K)</span>
-                    <h4>Binghatti Wraith &bull; Dubai</h4>
-                    <p>Al Jaddaf, Dubai &bull; Iconic off-plan luxury residences &amp; penthouses.</p>
-                  </div>
-                </div>
-                <div class="mini-project">
-                  <img src="https://precisionrealty.ae/wp-content/uploads/2026/06/3688e37b19c34213ad495e849d6d7688-584x438.webp" alt="Raw District Jebel Ali Dubai by Precision Realty" loading="lazy" />
-                  <div class="mini-project-body">
-                    <span class="mp-tag">From AED 649,000 (~$177K)</span>
-                    <h4>Raw District &bull; Jebel Ali</h4>
-                    <p>Dubai Freezone Corridor &bull; High-yield off-plan executive units.</p>
-                  </div>
-                </div>
-                <div class="mini-project">
-                  <img src="https://precisionrealty.ae/wp-content/uploads/2026/06/c16f599714ca4a39af04c2c93cd85317-584x438.webp" alt="Linar by Alef UAE by Precision Realty" loading="lazy" />
-                  <div class="mini-project-body">
-                    <span class="mp-tag">From AED 849,000 (~$231K)</span>
-                    <h4>Linar by Alef</h4>
-                    <p>1 to 4 Bed master-planned luxury residences (503–3,015 SF).</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style="display:flex;flex-wrap:wrap;gap:10px;">
-              <button type="button" class="btn btn-cyan" style="flex:1;" onclick="openBluprntModal('Request Precision Realty Dubai Off-Plan & Golden Visa Dossier', '>$10M–$25M Annual Revenue')">
-                Request Dubai Off-Plan Dossier
-              </button>
-              <a href="https://precisionrealty.ae" target="_blank" rel="noopener" class="btn btn-outline">
-                PrecisionRealty.ae &nearr;
-              </a>
+            <div class="gallery-item">
+              <img src="https://static.spotapps.co/spots/03/d2065b90de48ac99485f758409b9f6/full" alt="Kinara Signature Culinary Craft" loading="lazy" />
+              <span class="gallery-caption">3-Course Chef's Tasting</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 4: KINARA CORPORATE CATERING & PRIVATE EVENT CROSS-SELL -->
-    <section id="catering">
+    <!-- Why Owners Join (4 Clean Editorial Columns) -->
+    <section id="why" style="padding-top:20px;">
       <div class="container">
-        <div class="catering-showcase">
-          <div>
-            <span class="eyebrow">VIP Hospitality Cross-Sell &bull; www.KinaraFusionKitchen.com</span>
-            <h2 class="section-title" style="font-size:clamp(28px, 3.4vw, 42px);">
-              Spice Up Your Next <em>Board Dinner, Tech Offsite, or Corporate Gala</em>.
-            </h2>
-            <p style="font-size:15.5px;color:var(--text-secondary);">
-              Every founder at the BLUPRNT table leads an organization that hosts executive board meetings, company-wide offsites, client appreciations, and milestone celebrations. Let <strong>Kinara Fusion Kitchen (607 Geary St, San Francisco)</strong> elevate your next corporate or private event with 100% Halal refined Indian-Pakistani-American fusion catering.
+        <div class="section-header center">
+          <span class="eyebrow">The Difference</span>
+          <h2 class="section-title">Why Owners Join <em>The Round Table</em></h2>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-col">
+            <h3>People Over Pitch Decks</h3>
+            <p>
+              No keynote stages, no sponsors hawking software, and no name tags. Sit across from 15–20 fellow owners running $5M–$50M+ companies for candid, off-the-record conversation.
             </p>
-
-            <div class="catering-packages">
-              <div class="cat-pkg">
-                <div>
-                  <h4>01 // Executive Office &amp; Boardroom Catering (25–500+ Guests)</h4>
-                  <p>Signature Tikka Dum Biryani trays, Indian-inspired fusion pizzas (Mango Dhamaka, Tikka Pizza), Mediterranean platters &amp; samosas delivered across SF &amp; Silicon Valley.</p>
-                </div>
-                <span class="cat-badge">BAY AREA DELIVERY</span>
-              </div>
-
-              <div class="cat-pkg">
-                <div>
-                  <h4>02 // Private Dining &amp; Full-Restaurant Buyouts at 607 Geary St</h4>
-                  <p>Host your company holiday party, investor closing dinner, or rehearsal gala under Kinara's chandeliers with a custom chef's tasting menu.</p>
-                </div>
-                <span class="cat-badge">607 GEARY ST BUYOUT</span>
-              </div>
-
-              <div class="cat-pkg">
-                <div>
-                  <h4>03 // Live Chaat, Kebab &amp; Zero-Proof Mocktail Action Stations</h4>
-                  <p>Chef-attended Pani Puri shot bars, live naan/tikka stations, Knafeh Rasmalai dessert bars, and Watermelon Falls / Dragon Swirl mocktail bartenders.</p>
-                </div>
-                <span class="cat-badge">WHITE-GLOVE SERVICE</span>
-              </div>
-            </div>
-
-            <div style="display:flex;flex-wrap:wrap;gap:12px;">
-              <button type="button" class="btn btn-gold" onclick="openBluprntModal('Request Kinara VIP Corporate Catering / Private Event Buyout Quote', '>$5M–$10M Annual Revenue')">
-                Request VIP Corporate Catering Quote
-              </button>
-              <a href="https://kinarafusion.com/san-francisco-kinara-fusion-kitchen-catering" target="_blank" rel="noopener" class="btn btn-outline">
-                Kinara Catering Menu &nearr;
-              </a>
-              <a href="https://kinarafusion.com/san-francisco-kinara-fusion-kitchen-party" target="_blank" rel="noopener" class="btn btn-outline">
-                Book Private Party &nearr;
-              </a>
-            </div>
           </div>
 
-          <!-- Real Kinara Catering & Private Party Photography -->
-          <div class="catering-mosaic">
-            <img
-              class="wide"
-              src="https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/94/bbdc8bd3d24921adb011e19c4d33ff/:original"
-              alt="Kinara Fusion Kitchen Catering Spread"
-              loading="lazy"
-            />
-            <img
-              src="https://static.spotapps.co/website_images/ab_websites/443030_website_v1/catering_right.jpg"
-              alt="Kinara Corporate Catering Presentation"
-              loading="lazy"
-            />
-            <img
-              src="https://static.spotapps.co/website_images/ab_websites/443030_website_v1/parties_left.jpg"
-              alt="Kinara Private Parties and Event Celebrations at 607 Geary St"
-              loading="lazy"
-            />
+          <div class="pillar-col">
+            <h3>Vetted US &amp; Dubai Deal Flow</h3>
+            <p>
+              Evaluate institutional real estate opportunities directly with the principals behind <strong>Precision Developers</strong> (US) and <strong>Precision Realty</strong> (Dubai)—at your own pace.
+            </p>
+          </div>
+
+          <div class="pillar-col">
+            <h3>All-Expense-Paid Hospitality</h3>
+            <p>
+              Your entire 3-course tasting dinner and craft zero-proof pairings at Kinara Fusion Kitchen are underwritten by our founding partners. Leave your wallet at home.
+            </p>
+          </div>
+
+          <div class="pillar-col">
+            <h3>Corporate Catering Privilege</h3>
+            <p>
+              Experience Kinara's culinary artistry firsthand—and unlock priority concierge access for your own company's board dinners, offsites, and private buyouts.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 5: THE DESTINATION FUNNEL — THE BLUPRNT ROUND TABLE & COMMUNITY -->
-    <section id="roundtable" style="border-top:1px solid var(--border-grid);">
+    <!-- Founding Ecosystem Showcase: PrecisionDevelopers.com, PrecisionRealty.ae & KinaraFusionKitchen.com -->
+    <section id="partners" class="partners-section">
       <div class="container">
-        <span class="eyebrow">The Destination Funnel &bull; Private &gt;$5M Owner Syndicate</span>
-        <h2 class="section-title">
-          Step Inside <em>The BLUPRNT Round Table</em> Community.
-        </h2>
-        <p class="section-desc">
-          The inaugural dinner at <strong>607 Geary St, San Francisco</strong> is not a one-off meal—it is your entry point into <strong>The BLUPRNT Round Table</strong>: an invitation-only community of <strong>$5M–$100M+ business owners, founders, and asset allocators</strong> co-investing across the US and Dubai.
-        </p>
-
-        <div class="roundtable-grid">
-          <!-- Pillar 1: Inaugural SF Dinner Seat -->
-          <div class="rt-card">
-            <div>
-              <div class="rt-step">Step 01 // The Inaugural Table</div>
-              <h3>SF Chapter 01 Dinner Seat</h3>
-              <div class="rt-price">
-                Complimentary
-                <span>All-Expense-Paid 3-Course Tasting &bull; 12–15 Seats Only</span>
-              </div>
-              <ul class="rt-list">
-                <li><strong>Venue:</strong> Kinara Fusion Kitchen (607 Geary St, San Francisco, CA 94102)</li>
-                <li><strong>Eligibility:</strong> Verified business owners &amp; founders with <strong>&gt;$5M annual revenue</strong></li>
-                <li>Full 3-course Chef's Tasting Menu &amp; zero-proof craft mocktail pairings included free</li>
-                <li>Curated seating chart matched by industry, revenue scale &amp; capital allocation goals</li>
-                <li>Includes automatic charter induction into The BLUPRNT Round Table Community</li>
-              </ul>
-            </div>
-            <button type="button" class="btn btn-outline" style="width:100%;" onclick="openBluprntModal('Apply for Seat: SF-01 Dinner at Kinara (607 Geary St)', '>$5M–$10M Annual Revenue')">
-              Apply for SF-01 Dinner Seat
-            </button>
-          </div>
-
-          <!-- Pillar 2: The BLUPRNT Round Table Community (Featured Primary Funnel) -->
-          <div class="rt-card featured">
-            <span class="rt-badge">Primary Destination</span>
-            <div>
-              <div class="rt-step">Step 02 // The Permanent Network</div>
-              <h3>The BLUPRNT Round Table</h3>
-              <div class="rt-price">
-                Charter Member
-                <span>Vetted &gt;$5M Owner Community &amp; Co-Investment Syndicate</span>
-              </div>
-              <ul class="rt-list">
-                <li><strong>Private Deal Flow Syndicate:</strong> First-look access to Precision Developers US ground-up allocations (15%–20% guaranteed first return)</li>
-                <li><strong>Dubai Sovereign Desk:</strong> Direct off-plan &amp; Golden Visa advisory via Precision Realty Dubai (DLD ORN 50532)</li>
-                <li><strong>Private WhatsApp / Signal Circle:</strong> Year-round peer exchange with vetted $5M–$50M+ founders</li>
-                <li><strong>Quarterly Round Table Dinners:</strong> Priority seat at upcoming SF, Silicon Valley, Naples FL &amp; Dubai chapters</li>
-                <li><strong>Hospitality Concierge:</strong> VIP corporate catering &amp; private buyout rates at Kinara Fusion Kitchen</li>
-              </ul>
-            </div>
-            <button type="button" class="btn btn-gold" style="width:100%;" onclick="openBluprntModal('Join The BLUPRNT Round Table Community + SF Inaugural Dinner', '>$10M–$25M Annual Revenue')">
-              Join The BLUPRNT Round Table &rarr;
-            </button>
-          </div>
-
-          <!-- Pillar 3: 1-on-1 Principal Briefing & Catering Concierge -->
-          <div class="rt-card">
-            <div>
-              <div class="rt-step">Step 03 // Direct Principal Access</div>
-              <h3>1-on-1 Deal &amp; Event Desk</h3>
-              <div class="rt-price">
-                Private Briefing
-                <span>US Development &bull; Dubai Real Estate &bull; Corporate Buyouts</span>
-              </div>
-              <ul class="rt-list">
-                <li><strong>Can't make the SF dinner date?</strong> Schedule a private 1-on-1 lunch or tasting at 607 Geary St or 150 Executive Park Blvd, SF</li>
-                <li>Custom walkthrough of Tier 1 ($500K), Tier 2 ($1M) &amp; Tier 3 ($2M+) guaranteed return structures</li>
-                <li>Custom Dubai portfolio modelling (Hudayriyat Golf Estates, Binghatti Wraith, Raw District)</li>
-                <li>Dedicated corporate event planner for your company's next Bay Area catering or restaurant buyout</li>
-              </ul>
-            </div>
-            <button type="button" class="btn btn-cyan" style="width:100%;" onclick="openBluprntModal('Schedule 1-on-1 Principal Deal Briefing / Private Tasting', '>$25M–$50M Annual Revenue')">
-              Book 1-on-1 Principal Briefing
-            </button>
-          </div>
+        <div class="section-header">
+          <span class="eyebrow">The Founding Ecosystem</span>
+          <h2 class="section-title">Built for <em>Capital Preservation</em> &amp; Executive Hospitality.</h2>
         </div>
 
-        <!-- Multi-City Chapter Roadmap -->
-        <div class="circuit-strip">
-          <div class="circuit-node active-chapter">
-            <span class="c-code">Chapter 01 // Now Vetting</span>
-            <h4>San Francisco, CA</h4>
-            <p><strong>Kinara Fusion Kitchen</strong> (607 Geary St, SF 94102) &bull; 12–15 Owners (&gt;$5M Rev) &bull; Free 3-Course Tasting.</p>
+        <div class="partner-editorial-grid">
+          <!-- Card 1: Precision Developers (US) -->
+          <article class="partner-ed-card">
+            <div>
+              <div class="partner-ed-img">
+                <img src="https://precisiondevelopers.com/core/wp-content/uploads/2020/03/slide01.jpg" alt="Precision Developers US Ground-Up Real Estate" loading="lazy" />
+                <div class="partner-ed-logo-badge">
+                  <img src="https://precisiondevelopers.com/core/wp-content/uploads/2025/05/logo-white-Desktop-2.png" alt="Precision Developers Logo" />
+                </div>
+              </div>
+              <div class="partner-ed-body">
+                <span class="partner-ed-eyebrow">US Ground-Up Development</span>
+                <h3>Precision Developers</h3>
+                <p>
+                  <em>&ldquo;From Blueprint to Reality — With Precision.&rdquo;</em> Ground-up residential and commercial development across <strong>Florida (Naples), Texas, and California (Project Elysian &amp; The Pavillion)</strong> structured with guaranteed first-return protection.
+                </p>
+                <ul class="partner-highlights">
+                  <li><span>Tier 1 ($500,000+)</span> <strong>First 15% Return Guaranteed</strong></li>
+                  <li><span>Tier 2 ($1M – $1.99M)</span> <strong>First 20% Return Guaranteed</strong></li>
+                  <li><span>Tier 3 ($2,000,000+)</span> <strong>20% Floor + 25% Project Share</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="partner-ed-footer">
+              <a href="https://precisiondevelopers.com" target="_blank" rel="noopener">PrecisionDevelopers.com &nearr;</a>
+              <a href="#register" onclick="setTrack('US Real Estate Allocation (PrecisionDevelopers.com)')">Inquire &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Precision Realty Dubai (UAE) -->
+          <article class="partner-ed-card">
+            <div>
+              <div class="partner-ed-img">
+                <img src="https://precisionrealty.ae/wp-content/uploads/2026/06/51f76586f5d146e7914b3acdb4745fbe-584x438.webp" alt="Precision Realty Dubai Luxury Real Estate" loading="lazy" />
+                <div class="partner-ed-logo-badge">
+                  <img src="https://precisionrealty.ae/wp-content/uploads/2025/12/2-sm.png" alt="Precision Realty Dubai Logo" />
+                </div>
+              </div>
+              <div class="partner-ed-body">
+                <span class="partner-ed-eyebrow">Dubai &amp; UAE Luxury Brokerage &bull; ORN 50532</span>
+                <h3>Precision Realty Dubai</h3>
+                <p>
+                  <em>&ldquo;Invest Smarter. Live Better. Choose Precision.&rdquo;</em> Direct access to tax-free off-plan and waterfront residences across Dubai and Abu Dhabi, including <strong>Hudayriyat Golf Estates</strong>, <strong>Binghatti Wraith</strong>, and <strong>Raw District</strong>.
+                </p>
+                <ul class="partner-highlights">
+                  <li><span>Tax Jurisdiction</span> <strong>0% Income &amp; Capital Gains Tax</strong></li>
+                  <li><span>Target Rental Yield</span> <strong>8%–12% Gross Annual Yield</strong></li>
+                  <li><span>Residency Pathway</span> <strong>10-Year UAE Golden Visa</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="partner-ed-footer">
+              <a href="https://precisionrealty.ae" target="_blank" rel="noopener">PrecisionRealty.ae &nearr;</a>
+              <a href="#register" onclick="setTrack('Dubai Off-Plan Real Estate (PrecisionRealty.ae)')">Inquire &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Kinara Fusion Kitchen Catering & Buyouts -->
+          <article class="partner-ed-card">
+            <div>
+              <div class="partner-ed-img">
+                <img src="https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/94/bbdc8bd3d24921adb011e19c4d33ff/:original" alt="Kinara Fusion Kitchen Corporate Catering and Private Events" loading="lazy" />
+                <div class="partner-ed-logo-badge">
+                  <img src="https://static.spotapps.co/website_images/ab_websites/443030_website_v1/logo_v4.png" alt="Kinara Fusion Kitchen Logo" />
+                </div>
+              </div>
+              <div class="partner-ed-body">
+                <span class="partner-ed-eyebrow">Executive Catering &amp; Private Buyouts</span>
+                <h3>Kinara Fusion Kitchen</h3>
+                <p>
+                  <em>&ldquo;Bold Flavor. Refined Fusion. Fully Halal.&rdquo;</em> Bring the Kinara culinary experience from <strong>607 Geary St</strong> to your company's next board dinner, Silicon Valley offsite, holiday celebration, or private restaurant buyout.
+                </p>
+                <ul class="partner-highlights">
+                  <li><span>Corporate Catering</span> <strong>25 to 500+ Guests (Bay Area)</strong></li>
+                  <li><span>Private Buyouts</span> <strong>607 Geary St Chandelier Room</strong></li>
+                  <li><span>Live Stations</span> <strong>Chaat, Biryani &amp; Craft Mocktails</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="partner-ed-footer">
+              <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener">KinaraFusionKitchen.com &nearr;</a>
+              <a href="#register" onclick="setTrack('Kinara VIP Corporate Catering & Private Events')">Book Catering &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Common Questions (Founder Dinners style clean accordion) -->
+    <section id="faq">
+      <div class="container">
+        <div class="faq-layout">
+          <div>
+            <span class="eyebrow">Common Questions</span>
+            <h2 class="section-title" style="margin-bottom:16px;">
+              Everything you want to know <em>before you show up.</em>
+            </h2>
+            <p style="font-size:14.5px;color:var(--text-secondary);font-weight:300;">
+              Questions regarding the November 22nd dinner at Kinara Fusion Kitchen or The BLUPRNT Round Table? Reach our reservations desk directly at <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent);text-decoration:underline;">reservations@bluprntseries.com</a>.
+            </p>
           </div>
-          <div class="circuit-node">
-            <span class="c-code">Chapter 02 // Tri-Valley Flagship</span>
-            <h4>Dublin, CA (The Pavillion)</h4>
-            <p><strong>6400 Sierra Ct, Dublin</strong> &bull; 96,000 SF Sports, Wellness &amp; Level-2 Founders Sanctuary Tour.</p>
+
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>
+                <span>Is the November 22nd dinner really all-expense-paid?</span>
+                <span class="plus">+</span>
+              </summary>
+              <p>
+                Yes. For accepted founders and business owners (&gt;$5M annual revenue), the entire 3-course Chef's Tasting Dinner and zero-proof craft pairings at Kinara Fusion Kitchen (607 Geary St, San Francisco) on November 22nd at 6:00 PM are 100% complimentary, underwritten by Precision Developers, Precision Realty, and Kinara Hospitality.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Who is at the table?</span>
+                <span class="plus">+</span>
+              </summary>
+              <p>
+                Each dinner is strictly capped at 15 to 20 guests. Every seat is held by a vetted founder, business owner generating $5M+ in annual revenue, or accredited real estate investor. We do not admit cold-calling service providers.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>What is on the 3-course menu at Kinara Fusion Kitchen?</span>
+                <span class="plus">+</span>
+              </summary>
+              <p>
+                Our team is curating a bespoke 3-course tasting menu directly with Shahil at Kinara Fusion Kitchen (100% Halal refined South Asian &amp; American fusion, paired with signature zero-proof mocktails and cardamom chai). Vegetarian and dietary preferences are accommodated upon RSVP confirmation.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Is there any obligation to invest?</span>
+                <span class="plus">+</span>
+              </summary>
+              <p>
+                None whatsoever. Our format is built around high-trust relationships first. You will meet the principals behind PrecisionDevelopers.com and PrecisionRealty.ae at the table, learn how other $5M+ owners are allocating capital across the US and Dubai, and decide at your own pace if a future deal fits your portfolio.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>Can I book Kinara Fusion Kitchen for my own company's events?</span>
+                <span class="plus">+</span>
+              </summary>
+              <p>
+                Absolutely. Round Table members receive priority concierge access for corporate office catering, executive board dinners, and full-venue private buyouts at 607 Geary St. Select &ldquo;Kinara VIP Corporate Catering&rdquo; below or visit <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener" style="color:var(--accent);">KinaraFusionKitchen.com</a>.
+              </p>
+            </details>
           </div>
-          <div class="circuit-node">
-            <span class="c-code">Chapter 03 // US Sunbelt Tour</span>
-            <h4>Naples, FL &amp; Texas</h4>
-            <p><strong>Precision Developers</strong> On-Site Ground-Up Development &amp; Coastal Luxury Asset Inspection.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Invitation Registry ("The Table is Being Set") -->
+    <section id="register" class="registry-section">
+      <div class="container">
+        <div class="registry-card">
+          <div style="text-align:center;">
+            <span class="eyebrow">Private Membership &bull; Invitation Only</span>
+            <h2 class="section-title" style="margin-bottom:12px;">The Table is <em>Being Set.</em></h2>
+            <p style="font-size:15px;color:var(--text-secondary);font-weight:300;max-width:560px;margin:0 auto;">
+              Request your seat for the inaugural San Francisco dinner on <strong>November 22nd at 6:00 PM</strong> (607 Geary St &bull; 15–20 seats max) and charter access to <strong>The BLUPRNT Round Table</strong>.
+            </p>
           </div>
-          <div class="circuit-node">
-            <span class="c-code">Chapter 04 // UAE Investor Fly-In</span>
-            <h4>Business Bay, Dubai</h4>
-            <p><strong>Precision Realty (Al Manara Tower #1215)</strong> &bull; Tax-Free Off-Plan &amp; Abu Dhabi Golf Villa Summit.</p>
-          </div>
+
+          <form id="rsvpForm" class="form-grid" onsubmit="handleRsvpSubmit(event)">
+            <div class="form-row">
+              <div class="field">
+                <label for="fName">Full Name *</label>
+                <input type="text" id="fName" name="fName" required placeholder="Your full name" />
+              </div>
+              <div class="field">
+                <label for="fCompany">Company &amp; Website *</label>
+                <input type="text" id="fCompany" name="fCompany" required placeholder="Company name (domain.com)" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="fEmail">Executive Email *</label>
+                <input type="email" id="fEmail" name="fEmail" required placeholder="you@company.com" />
+              </div>
+              <div class="field">
+                <label for="fPhone">Direct Mobile / WhatsApp *</label>
+                <input type="tel" id="fPhone" name="fPhone" required placeholder="+1 (415) 000-0000" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="fRevenue">Annual Company Revenue *</label>
+                <select id="fRevenue" name="fRevenue" required>
+                  <option value="$5M – $10M Annual Revenue">$5M – $10M Annual Revenue</option>
+                  <option value="$10M – $25M Annual Revenue">$10M – $25M Annual Revenue</option>
+                  <option value="$25M – $50M Annual Revenue">$25M – $50M Annual Revenue</option>
+                  <option value="$50M+ Annual Revenue">$50M+ Annual Revenue</option>
+                  <option value="Accredited Real Estate Investor">$1M+ Liquid Accredited Investor</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="fTrack">Primary Interest *</label>
+                <select id="fTrack" name="fTrack" required>
+                  <option value="Nov 22 SF Dinner Seat (607 Geary St) + Round Table">Nov 22 SF Dinner (607 Geary St) + Round Table</option>
+                  <option value="US Real Estate Allocation (PrecisionDevelopers.com)">US Ground-Up Real Estate (PrecisionDevelopers.com)</option>
+                  <option value="Dubai Off-Plan Real Estate (PrecisionRealty.ae)">Dubai Tax-Free Real Estate (PrecisionRealty.ae)</option>
+                  <option value="Kinara VIP Corporate Catering & Private Events">Kinara VIP Corporate Catering &amp; Buyouts</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="fNotes">Dietary Restrictions or Note for the Hosts (Optional)</label>
+              <input type="text" id="fNotes" name="fNotes" placeholder="Dietary notes, real estate allocation interests, or guest nomination..." />
+            </div>
+
+            <button type="submit" class="btn-submit">Request an Invitation</button>
+          </form>
+
+          <div id="rsvpConfirm" class="confirm-box" role="status" aria-live="polite"></div>
+
+          <p style="text-align:center;margin-top:22px;font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-muted);">
+            Reservations Desk: <a href="mailto:reservations@bluprntseries.com" style="color:var(--accent);">reservations@bluprntseries.com</a> &bull; 607 Geary St, San Francisco, CA 94102
+          </p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:32px;padding-bottom:32px;border-bottom:1px solid var(--border-subtle);">
-        <div style="max-width:440px;">
-          <div class="brand" style="margin-bottom:10px;">
-            <div class="brand-mark">BP//</div>
-            <div>
-              <span class="brand-title">BLUPRNT</span>
-              <span class="brand-sub">Founder &amp; Owner Dealmaking Series</span>
-            </div>
-          </div>
-          <p style="color:var(--text-muted);font-size:12.5px;">
-            An invitation-only dealmaking dinner series and private Round Table community for founders and business owners with &gt;$5M in annual revenue. Inaugural SF Dinner hosted at <strong>Kinara Fusion Kitchen, 607 Geary St, San Francisco, CA 94102</strong>.
-          </p>
+      <div class="footer-inner">
+        <p>&copy; 2026 BLUPRNT — Founder &amp; Owner Dealmaking Series. Private Membership.</p>
+        <div class="footer-links">
+          <a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener">KinaraFusionKitchen.com</a>
+          <a href="https://precisiondevelopers.com" target="_blank" rel="noopener">PrecisionDevelopers.com</a>
+          <a href="https://precisionrealty.ae" target="_blank" rel="noopener">PrecisionRealty.ae</a>
+          <a href="mailto:reservations@bluprntseries.com">reservations@bluprntseries.com</a>
         </div>
-
-        <div style="display:flex;gap:44px;flex-wrap:wrap;">
-          <div>
-            <div style="font-family:var(--font-mono);color:var(--gold-light);font-size:11px;text-transform:uppercase;margin-bottom:10px;">Founding Ecosystem</div>
-            <ul style="list-style:none;display:grid;gap:6px;">
-              <li><a href="https://www.kinarafusionkitchen.com" target="_blank" rel="noopener">Kinara Fusion Kitchen (607 Geary St, SF) &nearr;</a></li>
-              <li><a href="https://precisiondevelopers.com" target="_blank" rel="noopener">Precision Developers (US Ground-Up) &nearr;</a></li>
-              <li><a href="https://precisionrealty.ae" target="_blank" rel="noopener">Precision Realty Dubai (DLD ORN 50532) &nearr;</a></li>
-              <li><a href="https://the-pavillion-dublin.vercel.app" target="_blank" rel="noopener">The Pavillion (6400 Sierra Ct, Dublin) &nearr;</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <div style="font-family:var(--font-mono);color:var(--cyan-bright);font-size:11px;text-transform:uppercase;margin-bottom:10px;">Direct Offices &amp; Concierge</div>
-            <ul style="list-style:none;display:grid;gap:6px;">
-              <li><strong>SF Dining Venue:</strong> 607 Geary St, San Francisco, CA 94102</li>
-              <li><strong>US Development HQ:</strong> 150 Executive Park Blvd #4525, SF, CA 94134</li>
-              <li><strong>Dubai Office:</strong> Al Manara Tower #1215, Business Bay, Dubai</li>
-              <li><strong>Contact:</strong> +1 (415) 225-7232 &bull; +971 50 837 6869 &bull; info@precisiondevelopers.com</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:24px;font-family:var(--font-mono);font-size:11px;">
-        <span>&copy; 2026 BLUPRNT — FOUNDER &amp; OWNER DEALMAKING SERIES. ALL RIGHTS RESERVED.</span>
-        <span>100% HALAL HOSPITALITY &bull; ZERO-PROOF CLARITY &bull; INVITATION-ONLY (&gt;$5M REVENUE)</span>
       </div>
     </div>
   </footer>
 
-  <!-- Native Qualification & Round Table Funnel Modal -->
-  <dialog id="bluprntModal" aria-labelledby="modalTitle">
-    <div class="dialog-inner">
-      <div class="dialog-header">
-        <div>
-          <span class="eyebrow" style="margin-bottom:8px;">BLUPRNT // THE ROUND TABLE CONCIERGE</span>
-          <h3 id="modalTitle" style="font-family:var(--font-display);font-size:22px;">Request Your Seat at the Round Table</h3>
-          <p style="font-size:12.5px;color:var(--text-muted);margin-top:2px;">
-            Inaugural Dinner: Kinara Fusion Kitchen (607 Geary St, San Francisco 94102) &bull; 12–15 Vetted Guests (&gt;$5M Revenue) &bull; Complimentary 3-Course Tasting
-          </p>
-        </div>
-        <button type="button" class="dialog-close" onclick="closeBluprntModal()" aria-label="Close modal">&times;</button>
-      </div>
-
-      <form id="bluprntForm" class="form-grid" onsubmit="submitBluprntForm(event)">
-        <div>
-          <label for="bpTrack">Primary Request / Funnel Track *</label>
-          <input type="text" id="bpTrack" name="bpTrack" required value="Request Seat: SF Inaugural Dinner (607 Geary St) + Round Table" />
-          <div class="error-msg">Please specify your request track.</div>
-        </div>
-
-        <div class="form-row-2">
-          <div>
-            <label for="bpName">Full Name &amp; Title *</label>
-            <input type="text" id="bpName" name="bpName" required placeholder="e.g., Aazim Sohail, Founder &amp; CEO" aria-errormessage="errName" />
-            <div id="errName" class="error-msg">&#9888; Please enter your full name.</div>
-          </div>
-          <div>
-            <label for="bpCompany">Company Name &amp; Website *</label>
-            <input type="text" id="bpCompany" name="bpCompany" required placeholder="e.g., Acme Holdings (acme.com)" aria-errormessage="errComp" />
-            <div id="errComp" class="error-msg">&#9888; Please enter your company name.</div>
-          </div>
-        </div>
-
-        <div class="form-row-2">
-          <div>
-            <label for="bpEmail">Executive Email *</label>
-            <input type="email" id="bpEmail" name="bpEmail" required placeholder="founder@company.com" aria-errormessage="errEmail" />
-            <div id="errEmail" class="error-msg">&#9888; Please enter a valid work email.</div>
-          </div>
-          <div>
-            <label for="bpPhone">Direct Mobile / WhatsApp (For Invite) *</label>
-            <input type="tel" id="bpPhone" name="bpPhone" required placeholder="+1 (415) 555-0199" aria-errormessage="errPhone" />
-            <div id="errPhone" class="error-msg">&#9888; Please provide a mobile number for VIP confirmation.</div>
-          </div>
-        </div>
-
-        <div class="form-row-2">
-          <div>
-            <label for="bpRevenue">Verified Annual Company Revenue *</label>
-            <select id="bpRevenue" name="bpRevenue" required aria-errormessage="errRev">
-              <option value=">$5M–$10M Annual Revenue">$5M – $10M Annual Revenue (Qualified)</option>
-              <option value=">$10M–$25M Annual Revenue">$10M – $25M Annual Revenue (Qualified)</option>
-              <option value=">$25M–$50M Annual Revenue">$25M – $50M Annual Revenue (Qualified)</option>
-              <option value=">$50M+ Annual Revenue">$50M+ Annual Revenue (Cornerstone)</option>
-              <option value="Accredited Real Estate Investor ($1M+ Liquid)">Accredited Real Estate Investor ($1M+ Liquid)</option>
-            </select>
-            <div id="errRev" class="error-msg">&#9888; Please select a revenue band.</div>
-          </div>
-          <div>
-            <label for="bpInterest">Primary Deal &amp; Hospitality Interest *</label>
-            <select id="bpInterest" name="bpInterest" required>
-              <option value="All 3: Round Table + US/Dubai Real Estate + Kinara Catering">All 3: Round Table + Real Estate + Catering</option>
-              <option value="US Ground-Up Development ($500K–$2M+ Guaranteed Floor)">US Development ($500K–$2M+ Guaranteed Return)</option>
-              <option value="Dubai Tax-Free Off-Plan Real Estate (PrecisionRealty.ae)">Dubai Tax-Free Real Estate (PrecisionRealty.ae)</option>
-              <option value="Kinara Corporate Catering & Private Buyout (607 Geary St)">Kinara Corporate Catering / Private Buyout</option>
-              <option value="Peer Founder Network & Deal Flow Only">Peer Founder Network &amp; Deal Flow</option>
-            </select>
-          </div>
-        </div>
-
-        <div>
-          <label for="bpNotes">Investment Goals, Catering Needs, or Dietary Preferences</label>
-          <textarea id="bpNotes" name="bpNotes" rows="2" placeholder="Optional: Tell us about your business, target real estate allocation ($500K–$2M+), or upcoming company catering dates..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-gold" style="width:100%;margin-top:4px;">
-          Submit Round Table Vetting &amp; Claim Complimentary Seat
-        </button>
-      </form>
-
-      <div id="bpToast" class="toast-confirm" role="status" aria-live="polite"></div>
-    </div>
-  </dialog>
-
   <script>
-    // Hero 4-Tab Visual Switcher (Real Imagery from Kinara, Precision Developers, and Precision Realty)
-    const stageViews = {
-      1: {
-        title: "Kinara Private Dining Table // 607 Geary St, SF",
-        sub: "LOWER NOB HILL, SAN FRANCISCO • 12–15 VETTED OWNERS",
-        badge: "SF CHAPTER 01",
-        img: "https://static.spotapps.co/spots/72/77d1bbb48840cf87a488fca243ab98/full",
-        alt: "Private table set for 12 to 15 vetted business owners at Kinara Fusion Kitchen, 607 Geary St, San Francisco",
-        chip: "KINARA FUSION KITCHEN • 607 GEARY ST, SF 94102",
-        capTop: "Inaugural San Francisco Host Venue",
-        capBody: "Intimate chandelier-lit private table at 607 Geary St reserved exclusively for 12–15 founders & owners with >$5M annual revenue"
-      },
-      2: {
-        title: "All-Expense-Paid 3-Course Chef's Tasting",
-        sub: "100% HALAL REFINED FUSION • ZERO-PROOF CRAFT MOCKTAILS",
-        badge: "FREE FOR GUESTS",
-        img: "https://static.spotapps.co/spots/03/d2065b90de48ac99485f758409b9f6/full",
-        alt: "Kinara Fusion Kitchen Signature Tikka Dum Biryani and 3-course tasting feast",
-        chip: "COMPLIMENTARY 3-COURSE TASTING • KINARAFUSIONKITCHEN.COM",
-        capTop: "Bold Flavor. Fresh Fusion. Fully Halal.",
-        capBody: "Pani Puri Shots, Chicken 69 Bites, Signature Tikka Dum Biryani, Matka Goat Curry, Knafeh Rasmalai & Dragon Swirl zero-proof elixirs"
-      },
-      3: {
-        title: "US Ground-Up Development // PrecisionDevelopers.com",
-        sub: "SAN FRANCISCO • NAPLES FL • TEXAS • ELYSIAN & THE PAVILLION",
-        badge: "15%–20% GUARANTEED",
-        img: "https://precisiondevelopers.com/core/wp-content/uploads/2020/03/slide01.jpg",
-        alt: "Precision Developers luxury ground-up real estate development",
-        chip: "PRECISIONDEVELOPERS.COM • $500K TO $2M+ CO-INVESTMENT TIERS",
-        capTop: "From Blueprint to Reality — With Precision",
-        capBody: "First 15% to 20% return guaranteed plus up to 25% of total project returns across Florida, Texas & California developments"
-      },
-      4: {
-        title: "Dubai Tax-Free Luxury Assets // PrecisionRealty.ae",
-        sub: "DUBAI LAND DEPARTMENT ORN: 50532 • BUSINESS BAY, DUBAI",
-        badge: "0% TAX • UAE",
-        img: "https://precisionrealty.ae/wp-content/uploads/2026/06/51f76586f5d146e7914b3acdb4745fbe-584x438.webp",
-        alt: "Hudayriyat Golf Estates and Dubai luxury real estate by Precision Realty",
-        chip: "PRECISIONREALTY.AE • OFF-PLAN & GOLDEN VISA PORTFOLIO",
-        capTop: "Invest Smarter. Live Better. Choose Precision.",
-        capBody: "Hudayriyat Golf Estates (AED 4.25M), Binghatti Wraith (AED 700K), Raw District & high-yield tax-free UAE properties"
+    function prefillAndScroll(e) {
+      e.preventDefault();
+      const email = document.getElementById('heroEmail').value.trim();
+      const targetEmail = document.getElementById('fEmail');
+      if (email && targetEmail) {
+        targetEmail.value = email;
       }
-    };
-
-    function setStageView(id) {
-      const v = stageViews[id];
-      if (!v) return;
-      document.getElementById('stTitle').textContent = v.title;
-      document.getElementById('stSub').textContent = v.sub;
-      document.getElementById('stBadge').textContent = v.badge;
-      const img = document.getElementById('stImg');
-      img.src = v.img;
-      img.alt = v.alt;
-      document.getElementById('stChip').textContent = v.chip;
-      document.getElementById('stCapTop').textContent = v.capTop;
-      document.getElementById('stCapBody').textContent = v.capBody;
-
-      [1, 2, 3, 4].forEach(n => {
-        document.getElementById('stBtn' + n).classList.toggle('active', n === id);
-      });
+      document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        document.getElementById('fName').focus();
+      }, 450);
     }
 
-    // Interactive US Investment Tier Selector (PrecisionDevelopers.com Official Tiers)
-    const usTiers = {
-      1: {
-        name: "TIER 1 // PRIVATE LP ($500,000 – $990,000 ALLOCATION)",
-        badge: "15% GUARANTEED FLOOR",
-        desc: "Designed for founders making their initial ground-up development allocation. Your first 15% return is contractually guaranteed before developer profit splits.",
-        min: "$500,000+",
-        floor: "First 15%",
-        upside: "Priority Preferred"
-      },
-      2: {
-        name: "TIER 2 // SENIOR LP ($1,000,000 – $1,990,000 ALLOCATION)",
-        badge: "20% GUARANTEED FLOOR",
-        desc: "Enhanced downside protection for 7-figure allocators. Your first 20% return is guaranteed across active US residential & commercial developments (Naples FL, TX, CA).",
-        min: "$1,000,000+",
-        floor: "First 20%",
-        upside: "Enhanced Senior LP"
-      },
-      3: {
-        name: "TIER 3 // CORNERSTONE LP ($2,000,000+ ALLOCATION)",
-        badge: "20% FLOOR + 25% PROJECT",
-        desc: "Your first 20% return is guaranteed before developer profit participation, PLUS you are entitled to 25% of total project returns across flagship developments.",
-        min: "$2,000,000+",
-        floor: "First 20%",
-        upside: "25% Project Share"
-      }
-    };
-
-    function selectUsTier(t) {
-      const data = usTiers[t];
-      if (!data) return;
-      document.getElementById('tierName').textContent = data.name;
-      document.getElementById('tierBadge').textContent = data.badge;
-      document.getElementById('tierDesc').textContent = data.desc;
-      document.getElementById('tierMin').textContent = data.min;
-      document.getElementById('tierFloor').textContent = data.floor;
-      document.getElementById('tierUpside').textContent = data.upside;
-
-      [1, 2, 3].forEach(n => {
-        document.getElementById('tierBtn' + n).classList.toggle('active', n === t);
-      });
-    }
-
-    // Native Modal Dialog Controls
-    const modal = document.getElementById('bluprntModal');
-    function openBluprntModal(trackTitle, defaultRev) {
-      document.getElementById('bpTrack').value = trackTitle || 'Request Seat: SF Inaugural Dinner (607 Geary St) + Round Table';
-      if (defaultRev) {
-        const revSelect = document.getElementById('bpRevenue');
-        for (let i = 0; i < revSelect.options.length; i++) {
-          if (revSelect.options[i].value === defaultRev) {
-            revSelect.selectedIndex = i;
-            break;
-          }
+    function setTrack(trackValue) {
+      const sel = document.getElementById('fTrack');
+      if (!sel) return;
+      for (let i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].value === trackValue) {
+          sel.selectedIndex = i;
+          break;
         }
       }
-      document.getElementById('bpToast').style.display = 'none';
-      modal.showModal();
     }
 
-    function closeBluprntModal() {
-      modal.close();
-    }
-
-    modal.addEventListener('click', (e) => {
-      const rect = modal.getBoundingClientRect();
-      const clickedInDialog = (
-        rect.top <= e.clientY &&
-        e.clientY <= rect.top + rect.height &&
-        rect.left <= e.clientX &&
-        e.clientX <= rect.left + rect.width
-      );
-      if (!clickedInDialog) modal.close();
-    });
-
-    // ARIA synchronization for :user-invalid / required fields
-    const bpForm = document.getElementById('bluprntForm');
-    const syncAriaInvalid = (el) => {
-      if (!el.checkValidity) return;
-      if (!el.checkValidity()) {
-        el.setAttribute('aria-invalid', 'true');
-      } else {
-        el.removeAttribute('aria-invalid');
-      }
-    };
-    bpForm.addEventListener('blur', (e) => {
-      if (e.target.matches('[required]')) syncAriaInvalid(e.target);
-    }, true);
-    bpForm.addEventListener('input', (e) => {
-      if (e.target.matches('[required]') && e.target.checkValidity()) {
-        e.target.removeAttribute('aria-invalid');
-      }
-    });
-
-    function submitBluprntForm(e) {
+    function handleRsvpSubmit(e) {
       e.preventDefault();
-      const name = document.getElementById('bpName').value.trim();
-      const company = document.getElementById('bpCompany').value.trim();
-      const rev = document.getElementById('bpRevenue').value;
-      const track = document.getElementById('bpTrack').value;
-      const interest = document.getElementById('bpInterest').value;
-      const toast = document.getElementById('bpToast');
+      const name = document.getElementById('fName').value.trim();
+      const company = document.getElementById('fCompany').value.trim();
+      const email = document.getElementById('fEmail').value.trim();
+      const phone = document.getElementById('fPhone').value.trim();
+      const rev = document.getElementById('fRevenue').value;
+      const track = document.getElementById('fTrack').value;
+      const notes = document.getElementById('fNotes').value.trim();
 
-      const waText = encodeURIComponent(
-        `Hi BLUPRNT Round Table Concierge — I am ${name} (${company}, ${rev}). I just submitted my request for: ${track} | Interest: ${interest}.`
+      const subject = encodeURIComponent(`BLUPRNT Nov 22 SF Dinner Request — ${name} (${company})`);
+      const body = encodeURIComponent(
+        `BLUPRNT Round Table & Nov 22 SF Dinner Reservation Request\n\n` +
+        `Name: ${name}\n` +
+        `Company: ${company}\n` +
+        `Email: ${email}\n` +
+        `Mobile: ${phone}\n` +
+        `Annual Revenue: ${rev}\n` +
+        `Primary Interest: ${track}\n` +
+        `Event: Nov 22nd, 6:00 PM at Kinara Fusion Kitchen (607 Geary St, SF)\n` +
+        `Notes: ${notes || 'None'}`
       );
 
-      toast.style.display = 'block';
-      toast.innerHTML = `
-        <strong>&#10003; Round Table Vetting Dossier Received for ${name} (${company}).</strong><br/>
-        Your qualification profile (<em>${rev}</em>) has been logged for <strong>${track}</strong> at <strong>607 Geary St, San Francisco</strong>.<br/>
-        <div style="margin-top:8px;display:flex;gap:10px;flex-wrap:wrap;">
-          <a href="https://wa.me/14152257232?text=${waText}" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:700;color:#fff;">Instant VIP Confirm via US WhatsApp (+1 415-225-7232) &nearr;</a>
-          <span>&bull;</span>
-          <a href="mailto:info@precisiondevelopers.com?subject=${encodeURIComponent('BLUPRNT Round Table Seat: ' + name + ' (' + company + ')')}&body=${waText}" style="text-decoration:underline;font-weight:700;color:#fff;">Send Priority Email &nearr;</a>
+      const box = document.getElementById('rsvpConfirm');
+      box.style.display = 'block';
+      box.innerHTML = `
+        <strong style="color:var(--accent);display:block;margin-bottom:6px;">Thank you, ${name}. Your request for the November 22nd table (6:00 PM &bull; 607 Geary St) has been recorded.</strong>
+        Our curation team reviews every profile to maintain our 15–20 seat limit. Click below to dispatch your reservation directly to our concierge desk:<br/>
+        <div style="margin-top:12px;display:flex;gap:14px;flex-wrap:wrap;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;">
+          <a href="mailto:reservations@bluprntseries.com?cc=info@precisiondevelopers.com&subject=${subject}&body=${body}" style="background:var(--accent);color:#111110;padding:10px 18px;font-weight:700;">Confirm via Email (reservations@bluprntseries.com) &rarr;</a>
+          <a href="https://wa.me/14152257232?text=${body}" target="_blank" rel="noopener" style="border:1px solid var(--accent);color:var(--accent);padding:10px 18px;font-weight:600;">Confirm via VIP WhatsApp &nearr;</a>
         </div>
       `;
     }
